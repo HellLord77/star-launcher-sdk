@@ -1,0 +1,30 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - launcher-api.yostar.net
+      User-Agent:
+      - python-httpx/0.28.1
+    method: GET
+    uri: https://launcher-api.yostar.net/
+  response:
+    body:
+      string: ''
+    headers:
+      content-length:
+      - '0'
+      date:
+      - Sat, 10 Jan 2026 17:54:55 GMT
+      server:
+      - istio-envoy
+    status:
+      code: 404
+      message: Not Found
+version: 1

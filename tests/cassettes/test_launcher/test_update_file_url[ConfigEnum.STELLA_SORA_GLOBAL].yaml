@@ -1,0 +1,64 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - launcher-pkg-ss-en.yo-star.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: GET
+    uri: https://launcher-pkg-ss-en.yo-star.com/install_pkg/game_launcher/StellaSora_EN/latest.yml
+  response:
+    body:
+      string: "version: 1.6.0\nfiles:\n  - url: StellaSora_EN_Gamelauncher-1.6.0-setup.exe\n
+        \   sha512: lE34CNxSuCENpkgqFPAAGqaWNNhocM7ghNO68grWBHIDKfEbTGdOSw473SY9Rem+wIcnVanUqItXsBnGXNmMvg==\n
+        \   size: 177986936\npath: StellaSora_EN_Gamelauncher-1.6.0-setup.exe\nsha512:
+        lE34CNxSuCENpkgqFPAAGqaWNNhocM7ghNO68grWBHIDKfEbTGdOSw473SY9Rem+wIcnVanUqItXsBnGXNmMvg==\nreleaseDate:
+        '2025-10-16T09:09:18.674Z'\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-Ray:
+      - 9bbe5f37083733bc-DAC
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '381'
+      Content-MD5:
+      - GMGJLloLsTQgO8xtUJENEA==
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Sat, 10 Jan 2026 18:52:31 GMT
+      ETag:
+      - '"18C1892E5A0BB134203BCC6D50910D10"'
+      Last-Modified:
+      - Thu, 16 Oct 2025 09:39:32 GMT
+      Server:
+      - cloudflare
+      Vary:
+      - accept-encoding
+      alt-svc:
+      - h3=":443"; ma=86400
+      x-oss-hash-crc64ecma:
+      - '16308450502691092031'
+      x-oss-object-type:
+      - Normal
+      x-oss-request-id:
+      - 69629FEF70C1143136BD93A3
+      x-oss-server-time:
+      - '3'
+      x-oss-storage-class:
+      - Standard
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"HBR_EN","time":1768047897,"version":"1.0.0"},"sign":"2a4e08c304ef227fb86b4645244d03cc"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - HBR_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/open/api/config
+  response:
+    body:
+      string: '{"code":200,"data":{"AccessKeyId":"STS.NY5XYaKiz6GNHStUAb6SmhH4N","AccessKeySecret":"C7xJ7udeKPvCiWXnDqbaNQUu5RE8BsJ9dzPQFoUK6Lju","Expiration":"2026-01-10T12:39:35Z","SecurityToken":"CAISyQJ1q6Ft5B2yfSjIr5qAE+PVprZbgYWlSnXFsUE3OtxBh42frDz2IHhMenZoAeoYtfs1nGhQ6/kblrp3QoJDTkzJd/x06Ztg7BulZIPN4yNCKGvW08/LI3OaLjKm9u2wCryLYbGwU/OpbE++5U0X6LDmdDKkckW4OJmS8/BOZcgWWQ/KBlgvRq0hRG1YpdQdKGHaONu0LxfumRCwNkdzvRdmgm4NgsbWgO/ks0CP0AWnmrJK/9qre8n1N/MBZskvD42Hu8VtbbfE3SJq7BxHybx7lqQs+02c5onDXAEJuUvdbLCMqoUyc1ZjBqwzBqhPrPXmhTPYfG88YUqdIX9pSgI1O0y3LOjIqEDUznca4OOXX6IaVqZgQx3CR1gUHk72j0hhQCdgUfRf5BGOBxIixH/yLquu+VoGys8P4QXNfCmetfI1PwrBrLLiTxqAAX/zGtVW6ZMA1rvvfbJnjwRVNz/j6uMVAiiW7Uun9T1kO9s4Esz0iox9SYMA1tJake/l7G0qaD0yyYqCtV0P65YMzngfAuzxx6B5dTGy/i1JHGNCQAC/mr+NkBYPaD6BkQ9rQpMgqRPusxuRjciX7wrsGuai7P2xLrPxY6kKqe7pIAA="},"msg":"OK"}'
+    headers:
+      content-length:
+      - '822'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:25:01 GMT
+      req-arrive-time:
+      - '1768047901780'
+      req-cost-time:
+      - '0'
+      resp-start-time:
+      - '1768047901781'
+      server:
+      - istio-envoy
+      tid:
+      - 82548d4504f319fcd3eb4cacd9f7c796
+      x-envoy-upstream-service-time:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

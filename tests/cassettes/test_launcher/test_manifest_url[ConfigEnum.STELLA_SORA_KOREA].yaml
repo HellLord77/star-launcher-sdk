@@ -1,0 +1,90 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_KR","time":1768048095,"version":"1.0.0"},"sign":"6d17011f683d2ffe6de77efeed821709"}'
+      Connection:
+      - keep-alive
+      Cookie:
+      - acw_tc=5e3a2ec9-3b14-4ff4-89ef-187aac22450b81e4b6d53d94a1461fddb83141b4d4de
+      Host:
+      - api-launcher-kr.yo-star.com
+      User-Agent:
+      - StellaSora_KR_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-kr.yo-star.com/api/launcher/game/config
+  response:
+    body:
+      string: '{"code":200,"data":{"game_lowest_version":"1.4.0","game_latest_version":"1.4.0","game_latest_file_path":"prod/ZIP_TEMP/StellaSora_KR_TEMP/StellaSora_KR-1.4.0-game.zip","game_start_exe_name":"StellaSora","game_file_size":"","game_file_size_type":"","crc64":"","size":0,"file_url":"","decompression_size":"16GB","config_id":0,"game_start_params":[]},"msg":"OK"}'
+    headers:
+      content-length:
+      - '359'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:28:15 GMT
+      req-arrive-time:
+      - '1768048095561'
+      req-cost-time:
+      - '3'
+      resp-start-time:
+      - '1768048095564'
+      server:
+      - istio-envoy
+      tid:
+      - e11f820ff332cfd9e166691106e7fc86
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_KR","time":1768048095,"version":"1.0.0"},"sign":"6d17011f683d2ffe6de77efeed821709"}'
+      Connection:
+      - keep-alive
+      Cookie:
+      - acw_tc=5e3a2ec9-3b14-4ff4-89ef-187aac22450b81e4b6d53d94a1461fddb83141b4d4de
+      Host:
+      - api-launcher-kr.yo-star.com
+      User-Agent:
+      - StellaSora_KR_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-kr.yo-star.com/api/launcher/game/config/json?version=1.4.0&file_path=prod%2FZIP_TEMP%2FStellaSora_KR_TEMP%2FStellaSora_KR-1.4.0-game.zip
+  response:
+    body:
+      string: '{"code":200,"data":{"url":"https://launcher-pkg-ss-kr.yo-star.com/zip_online_config_json/1.4.09WGwe7Zo.json"},"msg":"OK"}'
+    headers:
+      content-length:
+      - '121'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:28:19 GMT
+      req-arrive-time:
+      - '1768048099103'
+      req-cost-time:
+      - '3'
+      resp-start-time:
+      - '1768048099106'
+      server:
+      - istio-envoy
+      tid:
+      - 0f88cb3c8324869eca886066ac0996bd
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 200
+      message: OK
+version: 1

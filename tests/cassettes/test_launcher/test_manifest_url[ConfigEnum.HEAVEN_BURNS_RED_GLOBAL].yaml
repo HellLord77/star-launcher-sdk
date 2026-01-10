@@ -1,0 +1,86 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"HBR_EN","time":1768047905,"version":"1.0.0"},"sign":"78853f0fc559aaed69075bdb325d9f35"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - HBR_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/launcher/game/config
+  response:
+    body:
+      string: '{"code":200,"data":{"game_lowest_version":"2.1.11","game_latest_version":"2.1.11","game_latest_file_path":"prod/ZIP_TEMP/HBR_EN_TEMP/HeavenBurnsRed2.1.11.zip","game_start_exe_name":"HeavenBurnsRed","game_file_size":"","game_file_size_type":"","crc64":"","size":0,"file_url":"","decompression_size":"28.78GB","config_id":0,"game_start_params":null},"msg":"OK"}'
+    headers:
+      content-length:
+      - '359'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:25:06 GMT
+      req-arrive-time:
+      - '1768047906510'
+      req-cost-time:
+      - '1'
+      resp-start-time:
+      - '1768047906512'
+      server:
+      - istio-envoy
+      tid:
+      - 152e8c3d9d0ee1d5e2e3396588d51904
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"HBR_EN","time":1768047906,"version":"1.0.0"},"sign":"1b6e9835abfeb101a166c5efc69b4b7a"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - HBR_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/launcher/game/config/json?version=2.1.11&file_path=prod%2FZIP_TEMP%2FHBR_EN_TEMP%2FHeavenBurnsRed2.1.11.zip
+  response:
+    body:
+      string: '{"code":200,"data":{"url":"https://launcher-pkg-hbr-en.yo-star.com/zip_online_config_json/2.1.11sRscUVIW.json"},"msg":"OK"}'
+    headers:
+      content-length:
+      - '123'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:25:07 GMT
+      req-arrive-time:
+      - '1768047907445'
+      req-cost-time:
+      - '0'
+      resp-start-time:
+      - '1768047907446'
+      server:
+      - istio-envoy
+      tid:
+      - 6dce018ea566cd81690113206cced41b
+      x-envoy-upstream-service-time:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"MajSoul_CN","time":1768062700,"version":"1.0.0"},"sign":"2de64509e5827abeaabba1f550d701e5"}'
+      Connection:
+      - keep-alive
+      Host:
+      - launcher-api.yostar.net
+      User-Agent:
+      - MajSoul_CN_GameLauncher/1.0.0
+    method: GET
+    uri: https://launcher-api.yostar.net/api/launcher/game/config
+  response:
+    body:
+      string: '{"code":200,"data":null,"msg":"OK"}'
+    headers:
+      content-length:
+      - '35'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 16:31:47 GMT
+      req-arrive-time:
+      - '1768062707347'
+      req-cost-time:
+      - '2'
+      resp-start-time:
+      - '1768062707349'
+      server:
+      - istio-envoy
+      tid:
+      - 887f7931ffad1222ff6001ea31da61c0
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 200
+      message: OK
+version: 1

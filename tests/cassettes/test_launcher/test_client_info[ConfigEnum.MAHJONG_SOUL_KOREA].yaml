@@ -1,0 +1,46 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"MajSoul_KR","time":1768047945,"version":"1.0.0"},"sign":"c08ab20201f74ee75630b69679f872ca"}'
+      Connection:
+      - keep-alive
+      Cookie:
+      - acw_tc=4abc5f0c-8d6d-4b44-9891-9ba31b1e7b44f986b122f29f5da63a9ac1753d46f74e
+      Host:
+      - api-launcher-kr.yo-star.com
+      User-Agent:
+      - MajSoul_KR_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-kr.yo-star.com/api/launcher/base/config
+  response:
+    body:
+      string: '{"code":200,"data":{"launcher_background_img":"https://launcher-pkg-mj-kr.yo-star.com/prod/MajSoul_KR/launcher_background_img/821eb9ac27b1421c1dcd84eae6f0b708.png","launcher_background_img_crc64":"13876177525753709418","config_open":false,"user_agreement":"","privacy_policy":"","copyright_information":"","notice_pop_open":false,"notice_content":"","exit_launcher_open":false},"msg":"OK"}'
+    headers:
+      content-length:
+      - '389'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:25:45 GMT
+      req-arrive-time:
+      - '1768047945994'
+      req-cost-time:
+      - '2'
+      resp-start-time:
+      - '1768047945996'
+      server:
+      - istio-envoy
+      tid:
+      - 14938b1f31b2b87bd2f5f9ca646d3e29
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 200
+      message: OK
+version: 1

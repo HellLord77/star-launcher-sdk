@@ -1,0 +1,57 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_KR","time":1768048082,"version":"1.0.0"},"sign":"14f061ef567f2e4ed4676907431b66f3"}'
+      Connection:
+      - keep-alive
+      Cookie:
+      - acw_tc=5e3a2ec9-3b14-4ff4-89ef-187aac22450b81e4b6d53d94a1461fddb83141b4d4de
+      Host:
+      - api-launcher-kr.yo-star.com
+      User-Agent:
+      - StellaSora_KR_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-kr.yo-star.com/api/launcher/base/config
+  response:
+    body:
+      string: "{\"code\":200,\"data\":{\"launcher_background_img\":\"https://launcher-pkg-ss-kr.yo-star.com/prod/StellaSora_KR/launcher_background_img/399aceca08c3b9dd83f48c0c3823d5e1.png\",\"launcher_background_img_crc64\":\"8432822863700471359\",\"config_open\":true,\"user_agreement\":\"https://stellasora.kr/agreement\",\"privacy_policy\":\"https://stellasora.kr/privacy_policy\",\"copyright_information\":\"\xA9
+        Yostar\",\"notice_pop_open\":false,\"notice_content\":\"\\u003cp\\u003e\uC548\uB155\uD558\uC138\uC694
+        \uB9C8\uC655\uB2D8, \\u0026nbsp;\\u003c/p\\u003e\\u003cp\\u003e\uB9C8\uC655\uB2D8\uC758
+        \uC131\uC6D0\uC5D0 \uD798\uC785\uC5B4, \uB4DC\uB514\uC5B4 \uC2A4\uD154\uB77C
+        \uC18C\uB77C\uC758 \uC815\uC2DD \uC11C\uBE44\uC2A4\uAC00 \uC2DC\uC791\uB418\uC5C8\uC2B5\uB2C8\uB2E4!\\u003c/p\\u003e\\u003cp\\u003e\uC9C0\uAE08
+        \uBC14\uB85C \uB178\uBC14 \uB300\uB959\uC5D0\uC11C\uC758 \uC0C8\uB85C\uC6B4
+        \uC5EC\uC815\uC744 \uC2DC\uC791\uD574\uBCF4\uC138\uC694!\\u003c/p\\u003e\\u003cp\\u003e\\u003cbr\\u003e\\u003c/p\\u003e\\u003cp\\u003e*CBT\uC5D0
+        \uCC38\uC5EC\uD558\uC168\uB358 \uB9C8\uC655\uB2D8\uAED8\uC11C\uB294 \uAE30\uC874
+        \uBE4C\uB4DC \uBC0F \uAD00\uB828 \uD30C\uC77C\uC744 \uBAA8\uB450 \uC0AD\uC81C\uD558\uC2E0
+        \uD6C4, \uC2E0\uADDC \uCD9C\uC2DC \uBC84\uC804\uC744 \uC7AC\uC124\uCE58\uD558\uC2DC\uB294
+        \uAC83\uC744 \uAD8C\uC7A5\uB4DC\uB9BD\uB2C8\uB2E4.\\u003c/p\\u003e\\u003cp\\u003e*\uACE0\uAC1D\uC13C\uD130
+        \uC774\uBA54\uC77C \\u003ca href=\\\"mailto:sskr-cs@yo-star.com\\\" target=\\\"_blank\\\"\\u003esskr-cs@yo-star.com\\u003c/a\\u003e\\u003c/p\\u003e\",\"exit_launcher_open\":false},\"msg\":\"OK\"}"
+    headers:
+      content-length:
+      - '1158'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:28:03 GMT
+      req-arrive-time:
+      - '1768048083179'
+      req-cost-time:
+      - '4'
+      resp-start-time:
+      - '1768048083183'
+      server:
+      - istio-envoy
+      tid:
+      - 45e1207a3e7a58b34ef463aba674bb1c
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 200
+      message: OK
+version: 1

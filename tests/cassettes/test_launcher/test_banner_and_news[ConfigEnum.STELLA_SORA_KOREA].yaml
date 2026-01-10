@@ -1,0 +1,46 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_KR","time":1768048080,"version":"1.0.0"},"sign":"c9116eaf6d91606a88e9e962f9b85d6f"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-kr.yo-star.com
+      User-Agent:
+      - StellaSora_KR_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-kr.yo-star.com/api/launcher/operations/resource
+  response:
+    body:
+      string: "{\"code\":200,\"data\":{\"banner_loop\":true,\"news_list\":null,\"notice_list\":null,\"operations_banner_list\":[{\"banner_img\":\"https://launcher-pkg-ss-kr.yo-star.com/prod/StellaSora_KR/banner/7ba28b36d4c499e1706d850e6601890c.png\",\"jump_url\":\"https://naver.me/F0A7guD8\",\"remark\":\"\u7248\u672C\u4E00\u89C8\",\"start_at\":1766468400,\"end_at\":1768980866},{\"banner_img\":\"https://launcher-pkg-ss-kr.yo-star.com/prod/StellaSora_KR/banner/610f0e0bb321b9b6512cd80def40b615.png\",\"jump_url\":\"https://naver.me/57Qm2XMT\",\"remark\":\"\u6D3B\u52A8\u8BE6\u60C5\",\"start_at\":1766468400,\"end_at\":1768980840}],\"operations_resource_open\":true,\"time_interval\":5},\"msg\":\"OK\"}"
+    headers:
+      content-length:
+      - '612'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:28:02 GMT
+      req-arrive-time:
+      - '1768048082633'
+      req-cost-time:
+      - '4'
+      resp-start-time:
+      - '1768048082637'
+      server:
+      - istio-envoy
+      set-cookie:
+      - acw_tc=5e3a2ec9-3b14-4ff4-89ef-187aac22450b81e4b6d53d94a1461fddb83141b4d4de;path=/;HttpOnly;Max-Age=1800
+      tid:
+      - ccba1b94ce5671333ed9360b57c8ff12
+      x-envoy-upstream-service-time:
+      - '3'
+    status:
+      code: 200
+      message: OK
+version: 1

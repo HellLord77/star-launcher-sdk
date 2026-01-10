@@ -1,0 +1,90 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"MajSoul_KR","time":1768047955,"version":"1.0.0"},"sign":"f7cda7f2c0b357cc11af5562de60b401"}'
+      Connection:
+      - keep-alive
+      Cookie:
+      - acw_tc=4abc5f0c-8d6d-4b44-9891-9ba31b1e7b44f986b122f29f5da63a9ac1753d46f74e
+      Host:
+      - api-launcher-kr.yo-star.com
+      User-Agent:
+      - MajSoul_KR_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-kr.yo-star.com/api/launcher/game/config
+  response:
+    body:
+      string: '{"code":200,"data":{"game_lowest_version":"0.2.3","game_latest_version":"0.2.4","game_latest_file_path":"prod/ZIP_TEMP/MajSoul_KR_TEMP/MajSoul_KR-0.2.4-game.zip","game_start_exe_name":"Jantama_MahjongSoul","game_file_size":"","game_file_size_type":"","crc64":"","size":0,"file_url":"","decompression_size":"3.5GB","config_id":0,"game_start_params":null},"msg":"OK"}'
+    headers:
+      content-length:
+      - '365'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:25:55 GMT
+      req-arrive-time:
+      - '1768047955818'
+      req-cost-time:
+      - '3'
+      resp-start-time:
+      - '1768047955822'
+      server:
+      - istio-envoy
+      tid:
+      - 9c9a63734cc21a06d4571a05dab32b97
+      x-envoy-upstream-service-time:
+      - '3'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"MajSoul_KR","time":1768047955,"version":"1.0.0"},"sign":"f7cda7f2c0b357cc11af5562de60b401"}'
+      Connection:
+      - keep-alive
+      Cookie:
+      - acw_tc=4abc5f0c-8d6d-4b44-9891-9ba31b1e7b44f986b122f29f5da63a9ac1753d46f74e
+      Host:
+      - api-launcher-kr.yo-star.com
+      User-Agent:
+      - MajSoul_KR_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-kr.yo-star.com/api/launcher/game/config/json?version=0.2.4&file_path=prod%2FZIP_TEMP%2FMajSoul_KR_TEMP%2FMajSoul_KR-0.2.4-game.zip
+  response:
+    body:
+      string: '{"code":200,"data":{"url":"https://launcher-pkg-mj-kr.yo-star.com/zip_online_config_json/0.2.41WMTRKaC.json"},"msg":"OK"}'
+    headers:
+      content-length:
+      - '121'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:25:56 GMT
+      req-arrive-time:
+      - '1768047956916'
+      req-cost-time:
+      - '3'
+      resp-start-time:
+      - '1768047956919'
+      server:
+      - istio-envoy
+      tid:
+      - cbbb2c8b04c4e7d9fa68adc85e0f1754
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 200
+      message: OK
+version: 1

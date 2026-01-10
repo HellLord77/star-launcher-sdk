@@ -1,0 +1,48 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_JP","time":1768048057,"version":"1.0.0"},"sign":"b4acc8736fc74ec132fe53c7bb3b3cd4"}'
+      Connection:
+      - keep-alive
+      Cookie:
+      - acw_tc=2c68fe67-3f89-4937-9627-32cd0de9f3a4445f07ec13ecfd177d04cb208db3126d
+      Host:
+      - api-launcher-jp.yo-star.com
+      User-Agent:
+      - StellaSora_JP_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-jp.yo-star.com/api/launcher/base/config
+  response:
+    body:
+      string: "{\"code\":200,\"data\":{\"launcher_background_img\":\"https://launcher-pkg-ss-jp.yo-star.com/prod/StellaSora_JP/launcher_background_img/b33cc2301aa15b9944cf8863f7fb9864.jpg\",\"launcher_background_img_crc64\":\"3182080661817211835\",\"config_open\":true,\"user_agreement\":\"https://account.yostar.co.jp/agreement/user_agreement\",\"privacy_policy\":\"https://account.yostar.co.jp/agreement/privacy_agreement\",\"copyright_information\":\"Copyright
+        \xA9 Yostar, Inc. All rights reserved. \",\"notice_pop_open\":false,\"notice_content\":\"\\u003cp\\u003e\u300E\u30B9\u30C6\u30E9\u30BD\u30E9\u300F10\u670820\u65E5\uFF08\u6708\uFF09\u6B63\u5F0F\u30EA\u30EA\u30FC\u30B9\uFF01\\u003c/p\\u003e\\u003cp\\u003e\\u003cbr\\u003e\\u003c/p\\u003e\\u003cp\\u003e\u25C6\u6CE8\u610F\u4E8B\u9805\u25C6\\u003c/p\\u003e\\u003cp\\u003eCBT\u7248\u30A2\u30D7\u30EA\u306E\u30A2\u30F3\u30A4\u30F3\u30B9\u30C8\u30FC\u30EB\u304A\u3088\u3073PC\u7248\u30E9\u30F3\u30C1\u30E3\u30FC\u306E\u524A\u9664\u3092\u304A\u9858\u3044\u3057\u307E\u3059\u3002\\u003c/p\\u003e\\u003cp\\u003e\u25BC\u8A73\u7D30\u306F\u4E0B\u8A18\u306E\u516C\u5F0F\u30B5\u30A4\u30C8\u306E\u304A\u77E5\u3089\u305B\u3092\u3054\u78BA\u8A8D\u304F\u3060\u3055\u3044\u3002\\u003c/p\\u003e\\u003cp\\u003e\u30FB
+        \u300E\u3010\u91CD\u8981\u3011CBT\u7248\u30C6\u30B9\u30C8\u30A2\u30D7\u30EA\uFF08PC\uFF09\u306E\u30A2\u30F3\u30A4\u30F3\u30B9\u30C8\u30FC\u30EB\u306B\u3064\u3044\u3066\u300F\\u003c/p\\u003e\",\"exit_launcher_open\":false},\"msg\":\"OK\"}"
+    headers:
+      content-length:
+      - '1076'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:27:37 GMT
+      req-arrive-time:
+      - '1768048057468'
+      req-cost-time:
+      - '2'
+      resp-start-time:
+      - '1768048057471'
+      server:
+      - istio-envoy
+      tid:
+      - 87f2824c535cc7ffa8698229c281e487
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 200
+      message: OK
+version: 1

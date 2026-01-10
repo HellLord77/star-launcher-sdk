@@ -1,0 +1,49 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_EN","time":1768048024,"version":"1.0.0"},"sign":"0dbabf0c5741666af9bb28575e77e432"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - StellaSora_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/launcher/base/config
+  response:
+    body:
+      string: "{\"code\":200,\"data\":{\"launcher_background_img\":\"https://launcher-pkg-ss-en.yo-star.com/prod/StellaSora_EN/launcher_background_img/117e4423f169c380b7910b3f3e33dd7f.png\",\"launcher_background_img_crc64\":\"16998153004914323584\",\"config_open\":true,\"user_agreement\":\"https://stellasora.global/agreement\",\"privacy_policy\":\"https://stellasora.global/privacy_policy\",\"copyright_information\":\"\xA9
+        Yostar\",\"notice_pop_open\":false,\"notice_content\":\"\\u003cp\\u003eStella
+        Sora will officially launch on October 19 at 19:00 (UTC-7)! \\u003c/p\\u003e\\u003cp\\u003eThe
+        server is currently being prepared.\\u003c/p\\u003e\\u003cp\\u003e\\u003cbr\\u003e\\u003c/p\\u003e\\u003cp\\u003ePlease
+        uninstall the Closed Beta version and the launcher to prepare for the official
+        release. Thank you for your support of Stella Sora!\\u003c/p\\u003e\",\"exit_launcher_open\":true},\"msg\":\"OK\"}"
+    headers:
+      content-length:
+      - '839'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:27:09 GMT
+      req-arrive-time:
+      - '1768048029909'
+      req-cost-time:
+      - '1'
+      resp-start-time:
+      - '1768048029911'
+      server:
+      - istio-envoy
+      tid:
+      - 142bee9fed904b676949e3e849ed0fed
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 200
+      message: OK
+version: 1

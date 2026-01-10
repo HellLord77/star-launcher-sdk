@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"MajSoul_EN","time":1768047918,"version":"1.0.0"},"sign":"b2c143259e2b33d3427b531550be891d"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - MajSoul_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/launcher/game/config
+  response:
+    body:
+      string: '{"code":200,"data":{"game_lowest_version":"0.2.5","game_latest_version":"0.2.5","game_latest_file_path":"prod/ZIP_TEMP/MajSoul_EN_TEMP/MajSoul_EN-0.2.5-game.zip","game_start_exe_name":"Jantama_MahjongSoul","game_file_size":"","game_file_size_type":"","crc64":"","size":0,"file_url":"","decompression_size":"3.76GB","config_id":0,"game_start_params":null},"msg":"OK"}'
+    headers:
+      content-length:
+      - '366'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:25:19 GMT
+      req-arrive-time:
+      - '1768047919056'
+      req-cost-time:
+      - '1'
+      resp-start-time:
+      - '1768047919057'
+      server:
+      - istio-envoy
+      tid:
+      - 244e55633d064b0c4bc880873cc99331
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 200
+      message: OK
+version: 1

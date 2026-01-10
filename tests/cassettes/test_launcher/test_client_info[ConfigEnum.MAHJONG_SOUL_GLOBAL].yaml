@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"MajSoul_EN","time":1768047915,"version":"1.0.0"},"sign":"42141a7fe566df2cf7427285cf2ec833"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - MajSoul_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/launcher/base/config
+  response:
+    body:
+      string: '{"code":200,"data":{"launcher_background_img":"https://launcher-pkg-mj-en.yo-star.com/prod/MajSoul_EN/launcher_background_img/7d20a6d3843eeef35a8b7ea342e1f62e.png","launcher_background_img_crc64":"5070050016059633995","config_open":false,"user_agreement":"","privacy_policy":"","copyright_information":"","notice_pop_open":false,"notice_content":"","exit_launcher_open":false},"msg":"OK"}'
+    headers:
+      content-length:
+      - '388'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:25:17 GMT
+      req-arrive-time:
+      - '1768047917537'
+      req-cost-time:
+      - '0'
+      resp-start-time:
+      - '1768047917538'
+      server:
+      - istio-envoy
+      tid:
+      - f213bef5b0aa6523411459833479e389
+      x-envoy-upstream-service-time:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

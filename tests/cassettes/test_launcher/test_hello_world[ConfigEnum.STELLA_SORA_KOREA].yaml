@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-kr.yo-star.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: GET
+    uri: https://api-launcher-kr.yo-star.com/
+  response:
+    body:
+      string: '{"code":200,"data":"Hello world","msg":"OK"}'
+    headers:
+      content-length:
+      - '44'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 17:55:17 GMT
+      req-arrive-time:
+      - '1768067717670'
+      req-cost-time:
+      - '1'
+      resp-start-time:
+      - '1768067717672'
+      server:
+      - istio-envoy
+      set-cookie:
+      - acw_tc=41f73e0a-e1ed-4bf9-80f7-c693b912e8681fe8b9c3565c68c3249766d66b008593;path=/;HttpOnly;Max-Age=1800
+      tid:
+      - 43679d1b9d4e40cc64d5b182f9316ef6
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 200
+      message: OK
+version: 1

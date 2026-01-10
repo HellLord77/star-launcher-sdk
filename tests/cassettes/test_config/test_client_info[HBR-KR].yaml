@@ -1,0 +1,46 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"HBR_KR","time":1768062652,"version":"1.0.0"},"sign":"384a8b46fecd3b04718105f407efa31c"}'
+      Connection:
+      - keep-alive
+      Cookie:
+      - acw_tc=d5019074-1018-40f9-9446-a65a111aed874bfd71e46ea711d72cae819b6ceb30e7
+      Host:
+      - api-launcher-kr.yo-star.com
+      User-Agent:
+      - HBR_KR_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-kr.yo-star.com/api/launcher/base/config
+  response:
+    body:
+      string: '{"code":200,"data":null,"msg":"OK"}'
+    headers:
+      content-length:
+      - '35'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 16:30:54 GMT
+      req-arrive-time:
+      - '1768062654902'
+      req-cost-time:
+      - '2'
+      resp-start-time:
+      - '1768062654905'
+      server:
+      - istio-envoy
+      tid:
+      - c28b2100d74b1362ce0c071187554763
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,62 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - launcher-pkg-jp.yo-star.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: GET
+    uri: https://launcher-pkg-jp.yo-star.com/pubplat/game_launcher/install_pkg/launcher/MajSoul_JP/latest.yml
+  response:
+    body:
+      string: "version: 1.5.3\nfiles:\n  - url: MajSoul_JP_Gamelauncher-1.5.3-setup.exe\n
+        \   sha512: iORWGkXbVFVgdg3Y9KGOzVAqmL08IFi0xvzguUpzqhewyYFiz0+Yfa5a2sN8FPbo5d3CtX3sW0rEd1gB1VX5ow==\n
+        \   size: 168467936\npath: MajSoul_JP_Gamelauncher-1.5.3-setup.exe\nsha512:
+        iORWGkXbVFVgdg3Y9KGOzVAqmL08IFi0xvzguUpzqhewyYFiz0+Yfa5a2sN8FPbo5d3CtX3sW0rEd1gB1VX5ow==\nreleaseDate:
+        '2025-07-22T03:55:36.847Z'\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-Ray:
+      - 9bbe5ebb5cab5942-DAC
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '375'
+      Content-MD5:
+      - qLxHeQ/QbVzIXJLZX301Gg==
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Sat, 10 Jan 2026 18:52:12 GMT
+      ETag:
+      - '"A8BC47790FD06D5CC85C92D95F7D351A"'
+      Last-Modified:
+      - Wed, 23 Jul 2025 02:04:47 GMT
+      Server:
+      - cloudflare
+      Vary:
+      - accept-encoding
+      x-oss-hash-crc64ecma:
+      - '9770365459716484400'
+      x-oss-object-type:
+      - Normal
+      x-oss-request-id:
+      - 69629FDCA705D03835CD90F1
+      x-oss-server-time:
+      - '2'
+      x-oss-storage-class:
+      - Standard
+    status:
+      code: 200
+      message: OK
+version: 1

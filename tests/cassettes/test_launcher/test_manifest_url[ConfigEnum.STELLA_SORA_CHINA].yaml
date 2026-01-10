@@ -1,0 +1,86 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_CN","time":1768048325,"version":"1.0.0"},"sign":"f44311e3b29e50a03df1e925fd7e5530"}'
+      Connection:
+      - keep-alive
+      Host:
+      - launcher-api.yostar.net
+      User-Agent:
+      - StellaSora_CN_GameLauncher/1.0.0
+    method: GET
+    uri: https://launcher-api.yostar.net/api/launcher/game/config
+  response:
+    body:
+      string: '{"code":200,"data":{"game_lowest_version":"1.4.0","game_latest_version":"1.4.0","game_latest_file_path":"prod/ZIP_TEMP/StellaSora_CN_TEMP/StellaSora_CN-1.4.0-game.zip","game_start_exe_name":"xtlr","game_file_size":"","game_file_size_type":"","crc64":"","size":0,"file_url":"","decompression_size":"16GB","config_id":0},"msg":"OK"}'
+    headers:
+      content-length:
+      - '330'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:32:10 GMT
+      req-arrive-time:
+      - '1768048330645'
+      req-cost-time:
+      - '2'
+      resp-start-time:
+      - '1768048330647'
+      server:
+      - istio-envoy
+      tid:
+      - de3841cf15aaeb4966afec8e0a1e3996
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_CN","time":1768048332,"version":"1.0.0"},"sign":"214ad5a7b2f0c5b9be888cd112a3d805"}'
+      Connection:
+      - keep-alive
+      Host:
+      - launcher-api.yostar.net
+      User-Agent:
+      - StellaSora_CN_GameLauncher/1.0.0
+    method: GET
+    uri: https://launcher-api.yostar.net/api/launcher/game/config/json?version=1.4.0&file_path=prod%2FZIP_TEMP%2FStellaSora_CN_TEMP%2FStellaSora_CN-1.4.0-game.zip
+  response:
+    body:
+      string: '{"code":200,"data":{"url":"https://game-launcher-ss-cn.yostar.net/zip_online_config_json/1.4.0b5sH1S0j.json"},"msg":"OK"}'
+    headers:
+      content-length:
+      - '121'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:32:14 GMT
+      req-arrive-time:
+      - '1768048334625'
+      req-cost-time:
+      - '2'
+      resp-start-time:
+      - '1768048334627'
+      server:
+      - istio-envoy
+      tid:
+      - 8ab12376d91057e6b6ae68a99032f9a2
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 200
+      message: OK
+version: 1

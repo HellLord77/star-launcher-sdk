@@ -1,0 +1,46 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_KR","time":1768048083,"version":"1.0.0"},"sign":"1c51c3b841f642a21d0d0c48094467f9"}'
+      Connection:
+      - keep-alive
+      Cookie:
+      - acw_tc=5e3a2ec9-3b14-4ff4-89ef-187aac22450b81e4b6d53d94a1461fddb83141b4d4de
+      Host:
+      - api-launcher-kr.yo-star.com
+      User-Agent:
+      - StellaSora_KR_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-kr.yo-star.com/api/launcher/advanced/game/download/cdn
+  response:
+    body:
+      string: '{"code":200,"data":{"back_up_cdn":"https://launcher-pkg-ss-kr-bk.yo-star.com","primary_cdn":"https://launcher-pkg-ss-kr.yo-star.com"},"msg":"OK"}'
+    headers:
+      content-length:
+      - '145'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:28:06 GMT
+      req-arrive-time:
+      - '1768048086850'
+      req-cost-time:
+      - '3'
+      resp-start-time:
+      - '1768048086853'
+      server:
+      - istio-envoy
+      tid:
+      - dbdfb139e173aff05c009062b2756041
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 200
+      message: OK
+version: 1

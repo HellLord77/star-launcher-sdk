@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_EN","time":1768048109,"version":"1.0.0"},"sign":"5de1c44480e0efabfb6eeaeb820b8d3d"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - StellaSora_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/open/api/config
+  response:
+    body:
+      string: '{"code":200,"data":{"AccessKeyId":"STS.NZGG3y22vBpBvDuGEqdLiyJAK","AccessKeySecret":"DB15Z2oRz91AcTmvzFu36XR2EJ1mMWnBVVs7FJcp75LN","Expiration":"2026-01-10T12:41:04Z","SecurityToken":"CAISyQJ1q6Ft5B2yfSjIr5nyDInN3+1X9bKpdGLEo0UkaMNFlo/qqTz2IHhMenZoAeoYtfs1nGhQ6/kblrp3QoJDTkzJd/x06Ztg7BulZIPN418KN2vW08/LI3OaLjKm9u2wCryLYbGwU/OpbE++5U0X6LDmdDKkckW4OJmS8/BOZcgWWQ/KBlgvRq0hRG1YpdQdKGHaONu0LxfumRCwNkdzvRdmgm4NgsbWgO/ks0CP0AWnmrJK/9qre8n1N/MBZskvD42Hu8VtbbfE3SJq7BxHybx7lqQs+02c5onDXAEJuUvdbLCMqoUyc1ZjBqwzBqhPrPXmhTPYfG88YUqdIX9pSgI1O0y3LOjIqEAUjWs24OOXX6IaVqZgQx3CR1gUHk72j0hhQCdgUfRf5BGOBxIixH/yLquu+VoGys8P4QXNfCmetfJhEVNUrLLiTxqAAUXmE6euQ0eBGF3ZJAb9tefJGbLVq+biaQBhrHtuidqa3/gGi1Ft2mufyScXo4jXO9cay7k2U+vhp6cb+N0IlV1YTZixajHnMiVvmkfFbtu/BszNDLFwsADgX0mzE8dIhLHepCda0xKCvwWhx/YRygjaqkdhLo6UWbCm5Y5oyB1FIAA="},"msg":"OK"}'
+    headers:
+      content-length:
+      - '822'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:28:30 GMT
+      req-arrive-time:
+      - '1768048110938'
+      req-cost-time:
+      - '1'
+      resp-start-time:
+      - '1768048110939'
+      server:
+      - istio-envoy
+      tid:
+      - db794ba6376c1e1eaf67034c4e61d509
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,48 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_EN","time":1768048023,"version":"1.0.0"},"sign":"cb11533e4a38aabe71e4701b955ed957"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - StellaSora_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/launcher/operations/resource
+  response:
+    body:
+      string: "{\"code\":200,\"data\":{\"banner_loop\":true,\"news_list\":null,\"notice_list\":null,\"operations_banner_list\":[{\"banner_img\":\"https://launcher-pkg-ss-en.yo-star.com/prod/StellaSora_EN/banner/aa9deaedb0f256df8e08f93ed205253a.png\",\"jump_url\":\"https://stellasora.global/news/2324\",\"remark\":\"version
+        1.5 preview\",\"start_at\":1767952800,\"end_at\":1768294800},{\"banner_img\":\"https://launcher-pkg-ss-en.yo-star.com/prod/StellaSora_EN/banner/fcae0c502edbdf049e9911a8f7e50d6a.png\",\"jump_url\":\"https://stellasora.global/news/2303\",\"remark\":\"\u603B\u529B\u6218\",\"start_at\":1767513600,\"end_at\":1768247999},{\"banner_img\":\"https://launcher-pkg-ss-en.yo-star.com/prod/StellaSora_EN/banner/f6ab946acdc747ec03fd08692126e160.png\",\"jump_url\":\"https://stellasora.global/news/2218\",\"remark\":\"snowish
+        laru preview\",\"start_at\":0,\"end_at\":0},{\"banner_img\":\"https://launcher-pkg-ss-en.yo-star.com/prod/StellaSora_EN/banner/b4bf114a98f2b7c919badc1e25a1e7b6.png\",\"jump_url\":\"https://stellasora.global/news/2266\",\"remark\":\"freesia\",\"start_at\":1766909100,\"end_at\":1768852799},{\"banner_img\":\"https://launcher-pkg-ss-en.yo-star.com/prod/StellaSora_EN/banner/a51d2a16141094812421130ba1525dca.png\",\"jump_url\":\"https://stellasora.global/news/2233\",\"remark\":\"version
+        1.4 is now live\",\"start_at\":0,\"end_at\":0},{\"banner_img\":\"https://launcher-pkg-ss-en.yo-star.com/prod/StellaSora_EN/banner/2f88e72b1ea7eca9ab6e4336e5eadbe5.png\",\"jump_url\":\"https://stellasora.global/news/1930\",\"remark\":\"top-up
+        center\",\"start_at\":0,\"end_at\":0},{\"banner_img\":\"https://launcher-pkg-ss-en.yo-star.com/prod/StellaSora_EN/banner/35ad5a247488000ac21ac5ae4f6d1acc.png\",\"jump_url\":\"https://stellasora.global/news/1767\",\"remark\":\"\u516C\u6D4BFAQ\",\"start_at\":0,\"end_at\":0},{\"banner_img\":\"https://launcher-pkg-ss-en.yo-star.com/prod/StellaSora_EN/banner/51a5ad0a05e20a52d9018969bb77522a.png\",\"jump_url\":\"https://stellasora.global/news/1768\",\"remark\":\"\u516C\u6D4B\u52A0\u793E\u533A\",\"start_at\":0,\"end_at\":0}],\"operations_resource_open\":true,\"time_interval\":5},\"msg\":\"OK\"}"
+    headers:
+      content-length:
+      - '1965'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:27:04 GMT
+      req-arrive-time:
+      - '1768048024135'
+      req-cost-time:
+      - '1'
+      resp-start-time:
+      - '1768048024136'
+      server:
+      - istio-envoy
+      tid:
+      - 576836bb2bb78281acebd86e3a98f97e
+      x-envoy-upstream-service-time:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

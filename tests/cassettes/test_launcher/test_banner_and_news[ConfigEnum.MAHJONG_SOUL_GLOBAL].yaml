@@ -1,0 +1,59 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"MajSoul_EN","time":1768048112,"version":"1.0.0"},"sign":"0488d8c40cbb1ada56b8ff87fd806307"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - MajSoul_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/launcher/operations/resource
+  response:
+    body:
+      string: '{"code":200,"data":{"banner_loop":true,"news_list":{"code":0,"data":{"news":[{"rows":[{"description":"","link":"https://mahjongsoul.yo-star.com/news/120","publishTime":1766642116404,"thumbnail":"","title":"Santa''s
+        Final Delivery: A Mahjong Quiz!","typeLabel":"All"},{"description":"","link":"https://mahjongsoul.yo-star.com/news/118","publishTime":1765728000000,"thumbnail":"","title":"December
+        14th Maintenance","typeLabel":"All"},{"description":"","link":"https://mahjongsoul.yo-star.com/news/117","publishTime":1764125986000,"thumbnail":"","title":"Dora
+        Fever Challenge","typeLabel":"All"}],"typeLabel":"All"},{"rows":[{"description":"","link":"https://mahjongsoul.yo-star.com/news/105","publishTime":1748324795000,"thumbnail":"","title":"[IMPORTANT]
+        Yostar Account FAQ","typeLabel":"News"},{"description":"","link":"https://mahjongsoul.yo-star.com/news/104","publishTime":1748324723000,"thumbnail":"","title":"[IMPORTANT]
+        Yostar Account Notice","typeLabel":"News"},{"description":"","link":"https://mahjongsoul.yo-star.com/news/102","publishTime":1747796477000,"thumbnail":"","title":"Yostar
+        Account Notice","typeLabel":"News"}],"typeLabel":"News"},{"rows":[{"description":"","link":"https://mahjongsoul.yo-star.com/news/120","publishTime":1766642116404,"thumbnail":"","title":"Santa''s
+        Final Delivery: A Mahjong Quiz!","typeLabel":"Events"},{"description":"","link":"https://mahjongsoul.yo-star.com/news/117","publishTime":1764125986000,"thumbnail":"","title":"Dora
+        Fever Challenge","typeLabel":"Events"},{"description":"","link":"https://mahjongsoul.yo-star.com/news/115","publishTime":1761706918000,"thumbnail":"","title":"Upside
+        Down: Sharing Event","typeLabel":"Events"}],"typeLabel":"Events"},{"rows":[{"description":"","link":"https://mahjongsoul.yo-star.com/news/118","publishTime":1765728000000,"thumbnail":"","title":"December
+        14th Maintenance","typeLabel":"Maintenance"},{"description":"","link":"https://mahjongsoul.yo-star.com/news/116","publishTime":1763357702000,"thumbnail":"","title":"November
+        18th Maintenance","typeLabel":"Maintenance"},{"description":"","link":"https://mahjongsoul.yo-star.com/news/114","publishTime":1760929678000,"thumbnail":"","title":"October
+        21st Maintenance","typeLabel":"Maintenance"}],"typeLabel":"Maintenance"},{"rows":[{"description":"","link":"https://mahjongsoul.yo-star.com/news/72","publishTime":1699864938830,"thumbnail":"","title":"Mahjong
+        Soul Classroom 101: Furiten","typeLabel":"Other"},{"description":"","link":"https://mahjongsoul.yo-star.com/news/71","publishTime":1699864896903,"thumbnail":"","title":"Mahjong
+        Soul Classroom 101: Dora","typeLabel":"Other"},{"description":"","link":"https://mahjongsoul.yo-star.com/news/70","publishTime":1699864848158,"thumbnail":"","title":"Mahjong
+        Soul Classroom 101: Riichi","typeLabel":"Other"}],"typeLabel":"Other"}]},"message":"ok"},"notice_list":null,"operations_banner_list":[{"banner_img":"https://launcher-pkg-mj-en.yo-star.com/prod/MajSoul_EN/banner/586428fba342863de46a294af9ebb0fb.png","jump_url":"https://www.youtube.com/watch?v=hsSdL1_0jMw","remark":"","start_at":1765854790,"end_at":1768251599},{"banner_img":"https://launcher-pkg-mj-en.yo-star.com/prod/MajSoul_EN/banner/5214e2d2080bb75b196409d5a7629b67.png","jump_url":"https://x.com/MahjongSoul_EN/status/1996776550180835578/photo/1","remark":"","start_at":1765854834,"end_at":1768251599},{"banner_img":"https://launcher-pkg-mj-en.yo-star.com/prod/MajSoul_EN/banner/7bec78a7b19a8829e2f17da7c49ebbb2.png","jump_url":"https://x.com/MahjongSoul_EN/status/2001180559855509864","remark":"","start_at":1765953600,"end_at":1768251599},{"banner_img":"https://launcher-pkg-en.yo-star.com/pubplat/game_launcher/banner/1c042cf5c58e96c2b038fbd2f6ced67b.jpg","jump_url":"https://mahjongsoul.yo-star.com/faq","remark":"","start_at":0,"end_at":0},{"banner_img":"https://launcher-pkg-en.yo-star.com/pubplat/game_launcher/banner/5328b80a8c69216ba55262dbb78795b6.jpg","jump_url":"https://mahjongsoul.yo-star.com/classroom","remark":"","start_at":0,"end_at":0}],"operations_resource_open":true,"time_interval":3},"msg":"OK"}'
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:28:35 GMT
+      req-arrive-time:
+      - '1768048115691'
+      req-cost-time:
+      - '20'
+      resp-start-time:
+      - '1768048115712'
+      server:
+      - istio-envoy
+      tid:
+      - f489e5579245e58993a14ac0666c39f7
+      transfer-encoding:
+      - chunked
+      x-envoy-upstream-service-time:
+      - '20'
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,86 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"MajSoul_EN","time":1768047922,"version":"1.0.0"},"sign":"3d085f7ad92f895c15efdf45cd73c239"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - MajSoul_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/launcher/game/config
+  response:
+    body:
+      string: '{"code":200,"data":{"game_lowest_version":"0.2.5","game_latest_version":"0.2.5","game_latest_file_path":"prod/ZIP_TEMP/MajSoul_EN_TEMP/MajSoul_EN-0.2.5-game.zip","game_start_exe_name":"Jantama_MahjongSoul","game_file_size":"","game_file_size_type":"","crc64":"","size":0,"file_url":"","decompression_size":"3.76GB","config_id":0,"game_start_params":null},"msg":"OK"}'
+    headers:
+      content-length:
+      - '366'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:25:23 GMT
+      req-arrive-time:
+      - '1768047923004'
+      req-cost-time:
+      - '1'
+      resp-start-time:
+      - '1768047923005'
+      server:
+      - istio-envoy
+      tid:
+      - 76a1f5ba00bc611b3fe3263263bd0980
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"MajSoul_EN","time":1768047923,"version":"1.0.0"},"sign":"5d502ed2cd5f05732592adf67b1456b4"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - MajSoul_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/launcher/game/config/json?version=0.2.5&file_path=prod%2FZIP_TEMP%2FMajSoul_EN_TEMP%2FMajSoul_EN-0.2.5-game.zip
+  response:
+    body:
+      string: '{"code":200,"data":{"url":"https://launcher-pkg-mj-en.yo-star.com/zip_online_config_json/0.2.5tB1sXUGg.json"},"msg":"OK"}'
+    headers:
+      content-length:
+      - '121'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:25:23 GMT
+      req-arrive-time:
+      - '1768047923757'
+      req-cost-time:
+      - '1'
+      resp-start-time:
+      - '1768047923759'
+      server:
+      - istio-envoy
+      tid:
+      - bc21bf45a90f48344f3cfddd3050ed42
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 200
+      message: OK
+version: 1

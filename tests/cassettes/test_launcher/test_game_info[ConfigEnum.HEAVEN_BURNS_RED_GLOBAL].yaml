@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"HBR_EN","time":1768047888,"version":"1.0.0"},"sign":"193da05b7f130ac678c759c90fc4b5c8"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - HBR_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/launcher/game/config
+  response:
+    body:
+      string: '{"code":200,"data":{"game_lowest_version":"2.1.11","game_latest_version":"2.1.11","game_latest_file_path":"prod/ZIP_TEMP/HBR_EN_TEMP/HeavenBurnsRed2.1.11.zip","game_start_exe_name":"HeavenBurnsRed","game_file_size":"","game_file_size_type":"","crc64":"","size":0,"file_url":"","decompression_size":"28.78GB","config_id":0,"game_start_params":null},"msg":"OK"}'
+    headers:
+      content-length:
+      - '359'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:24:53 GMT
+      req-arrive-time:
+      - '1768047893984'
+      req-cost-time:
+      - '0'
+      resp-start-time:
+      - '1768047893985'
+      server:
+      - istio-envoy
+      tid:
+      - c267ee245d8e08cb351dc89f354e1eef
+      x-envoy-upstream-service-time:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

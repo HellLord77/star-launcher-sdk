@@ -1,0 +1,118 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - launcher-pkg-kr.yo-star.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: GET
+    uri: https://launcher-pkg-kr.yo-star.com/pubplat/game-launcher/install_pkg/launcher/MajSoul_KR/latest.yml
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/12RX2+CMBTF3/0UDe9QUMN0qTWRabYY96Du2RS4g87Si7Qs8u1HZX/i+tSenvPr
+        uSlbXitFPqExEvXCi4LQI6AzzKUuFt7bcePPvCUfsXXTYMNHhLAEc+CveGizcgsdo7ezu9iBMaIA
+        fiyBmBoy+S4hJ2foSI5giEZL4CqNDRj9sbrYHi4tGPuS83gej2ebTfwQJlE0nYwn01Uyn8xWjP55
+        XOIZb9tCVOAr0eqshMZHNwOIAI3xRe1rbGwJwlg/CoSSXe8yQYYVo99pB+r787pNayUsvaNRqY0V
+        Sp3qc0F/xZ34OGCrTtt9r9m+T9BVilFHcbR1wsNwHPvhsCJGe2WYsH+4Ap0/YcZLa2vzSKmopSuW
+        ilRkCtvclaO2wTZVYEpEu7ws/uHuOKMeP/zJF2VqNDDDAQAA
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-Ray:
+      - 9bbdfb5b4fc6ba4f-DAC
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sat, 10 Jan 2026 17:44:22 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - accept-encoding
+      alt-svc:
+      - h3=":443"; ma=86400
+      x-oss-ec:
+      - 0026-00000001
+      x-oss-request-id:
+      - 69628FF670C1143234BC938B
+      x-oss-server-time:
+      - '2'
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - launcher-pkg-kr.yo-star.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: GET
+    uri: https://launcher-pkg-kr.yo-star.com/pubplat/game_launcher/install_pkg/launcher/MajSoul_KR/latest.yml
+  response:
+    body:
+      string: "version: 1.6.0\nfiles:\n  - url: MajSoul_KR_Gamelauncher-1.6.0-setup.exe\n
+        \   sha512: UT3OYX4/1uIvDSl8Z35lPPXqOyGJXmh1HdC4coJfhJy9r2IXG+0RELw6XVjF1Cp5urQjv/8MEfnUIkS7iS0pEw==\n
+        \   size: 180428360\npath: MajSoul_KR_Gamelauncher-1.6.0-setup.exe\nsha512:
+        UT3OYX4/1uIvDSl8Z35lPPXqOyGJXmh1HdC4coJfhJy9r2IXG+0RELw6XVjF1Cp5urQjv/8MEfnUIkS7iS0pEw==\nreleaseDate:
+        '2025-11-12T07:23:27.091Z'\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-Ray:
+      - 9bbdfdcd5d22814e-DAC
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '375'
+      Content-MD5:
+      - OmcRslbzNBCc2kL5NcrhjA==
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Sat, 10 Jan 2026 17:46:01 GMT
+      ETag:
+      - '"3A6711B256F334109CDA42F935CAE18C"'
+      Last-Modified:
+      - Thu, 13 Nov 2025 03:10:25 GMT
+      Server:
+      - cloudflare
+      Vary:
+      - accept-encoding
+      alt-svc:
+      - h3=":443"; ma=86400
+      x-oss-hash-crc64ecma:
+      - '5066141389072252463'
+      x-oss-object-type:
+      - Normal
+      x-oss-request-id:
+      - 6962905970C1143234242B8C
+      x-oss-server-time:
+      - '2'
+      x-oss-storage-class:
+      - Standard
+    status:
+      code: 200
+      message: OK
+version: 1

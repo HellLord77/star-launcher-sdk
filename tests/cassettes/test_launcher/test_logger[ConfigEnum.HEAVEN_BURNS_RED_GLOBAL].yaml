@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"HBR_EN","time":1768047894,"version":"1.0.0"},"sign":"1cb5a4a52d51da5fb078280f913c8854"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - HBR_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/launcher/advanced/config
+  response:
+    body:
+      string: '{"code":200,"data":{"log_upload":true},"msg":"OK"}'
+    headers:
+      content-length:
+      - '50'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:24:57 GMT
+      req-arrive-time:
+      - '1768047897749'
+      req-cost-time:
+      - '1'
+      resp-start-time:
+      - '1768047897750'
+      server:
+      - istio-envoy
+      tid:
+      - afe12137c2927d05cb2164a47f2d2fba
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 200
+      message: OK
+version: 1

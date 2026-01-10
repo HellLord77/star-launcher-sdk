@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"MajSoul_EN","time":1768047917,"version":"1.0.0"},"sign":"80a35a1cde94fb50b13b08bcb04048b6"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - MajSoul_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/launcher/advanced/game/download/cdn
+  response:
+    body:
+      string: '{"code":200,"data":{"back_up_cdn":"https://launcher-pkg-mj-en-bk.yo-star.com","primary_cdn":"https://launcher-pkg-mj-en.yo-star.com"},"msg":"OK"}'
+    headers:
+      content-length:
+      - '145'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:25:18 GMT
+      req-arrive-time:
+      - '1768047918289'
+      req-cost-time:
+      - '1'
+      resp-start-time:
+      - '1768047918290'
+      server:
+      - istio-envoy
+      tid:
+      - 4258332cfbee28218d866c4be82de674
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 200
+      message: OK
+version: 1

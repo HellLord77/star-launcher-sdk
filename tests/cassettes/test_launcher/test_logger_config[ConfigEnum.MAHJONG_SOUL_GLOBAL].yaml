@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"MajSoul_EN","time":1768047919,"version":"1.0.0"},"sign":"ad9151b303c4dcb67c983ab2f8c2cbf5"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - MajSoul_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/open/api/config
+  response:
+    body:
+      string: '{"code":200,"data":{"AccessKeyId":"STS.NZkuN6HZKbUCBFpne7g5uXtYM","AccessKeySecret":"7fzyZf9p8CAm6F2TNtQevF9mNwkiHLpTWmUxqtrdSiqe","Expiration":"2026-01-10T12:32:25Z","SecurityToken":"CAISyQJ1q6Ft5B2yfSjIr5nePvSCpYVq1ZeoQGDBimVia7pZt7Hyrzz2IHhMenZoAeoYtfs1nGhQ6/kblrp3QoJDTkzJd/x06Ztg7BulZIPN4x9fFmvW08/LI3OaLjKm9u2wCryLYbGwU/OpbE++5U0X6LDmdDKkckW4OJmS8/BOZcgWWQ/KBlgvRq0hRG1YpdQdKGHaONu0LxfumRCwNkdzvRdmgm4NgsbWgO/ks0CP0AWnmrJK/9qre8n1N/MBZskvD42Hu8VtbbfE3SJq7BxHybx7lqQs+02c5onDXAEJuUvdbLCMqoUyc1ZjBqwzBqhPrPXmhTPYfG88YUqdIX9pSgI1O0y3LOjIqEA0rfamgZAyPGBXUcFHRmp10iVZOXkRSjN6Uk0DMpFCERRTUkd3UUqSdHF/pAnwaj+pwqL92rk+v/JdQve3rLLiTxqAATObFXB2HGzlMrhdFU6YSeSLSTvMMULRIEX6Ee6q8t3q5o1uI5rthTDQEqb24zEU/X84cjcptE+xN+r0tsbsg1diroAADRPncPZZoUr6ZYYkmtUwuf6B5z2kg9AgA1iwF3cXj7kiYFHZaWhvXBZ+UvOkVjMYn7WvJ4C740/1DiS/IAA="},"msg":"OK"}'
+    headers:
+      content-length:
+      - '822'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:25:22 GMT
+      req-arrive-time:
+      - '1768047922260'
+      req-cost-time:
+      - '0'
+      resp-start-time:
+      - '1768047922261'
+      server:
+      - istio-envoy
+      tid:
+      - 955f20932df0fba82ce428d288e963aa
+      x-envoy-upstream-service-time:
+      - '0'
+    status:
+      code: 200
+      message: OK
+version: 1

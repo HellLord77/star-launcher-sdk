@@ -1,0 +1,114 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - launcher-pkg-jp.yo-star.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: GET
+    uri: https://launcher-pkg-jp.yo-star.com/pubplat/game-launcher/install_pkg/launcher/MajSoul_JP/latest.yml
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/12RXW+CMBiF7/0VDfdQ0EF0qTWLSvYRl2W6a1PgHXSWvkjLIv9+VPcR16v29Jyn
+        503Z4lQr8gmtkajnXhSEHgGdYyF1Offedqk/9RZ8xNZtiy0fEcKWWAB/xm2XV0/QM3o+u4sNGCNK
+        4LsKiGkgl+8SCnKAnhQIhmi0BE7S2IDRH6uLvcKxA2MfCp7MkvE0TW/iuyRaJpN4EsezWbpaM/rn
+        cYl7PG9LUYOvRKfzClof3QwgAjTGF42vsbUVCGP9KBBK9oPLBDnWjH6nHWjoz5sua5Sw9IpGpTZW
+        KLVvDiX9FTfiY4ud2j++DJod+gR9rRh1FEdbL3kYjhM/vKyI0UG5TDg8XIMuVpjzytrG3FIqGumK
+        ZSITucKucOWobbHLFJgK0S6O83+4K85owF/+5AvA2/20wwEAAA==
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-Ray:
+      - 9bbdfb54584071f4-DAC
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/xml
+      Date:
+      - Sat, 10 Jan 2026 17:44:20 GMT
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - accept-encoding
+      x-oss-ec:
+      - 0026-00000001
+      x-oss-request-id:
+      - 69628FF45A61C63535599FDE
+      x-oss-server-time:
+      - '2'
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - launcher-pkg-jp.yo-star.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: GET
+    uri: https://launcher-pkg-jp.yo-star.com/pubplat/game_launcher/install_pkg/launcher/MajSoul_JP/latest.yml
+  response:
+    body:
+      string: "version: 1.5.3\nfiles:\n  - url: MajSoul_JP_Gamelauncher-1.5.3-setup.exe\n
+        \   sha512: iORWGkXbVFVgdg3Y9KGOzVAqmL08IFi0xvzguUpzqhewyYFiz0+Yfa5a2sN8FPbo5d3CtX3sW0rEd1gB1VX5ow==\n
+        \   size: 168467936\npath: MajSoul_JP_Gamelauncher-1.5.3-setup.exe\nsha512:
+        iORWGkXbVFVgdg3Y9KGOzVAqmL08IFi0xvzguUpzqhewyYFiz0+Yfa5a2sN8FPbo5d3CtX3sW0rEd1gB1VX5ow==\nreleaseDate:
+        '2025-07-22T03:55:36.847Z'\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-Ray:
+      - 9bbdfdc9fc5f71f4-DAC
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '375'
+      Content-MD5:
+      - qLxHeQ/QbVzIXJLZX301Gg==
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Sat, 10 Jan 2026 17:46:00 GMT
+      ETag:
+      - '"A8BC47790FD06D5CC85C92D95F7D351A"'
+      Last-Modified:
+      - Wed, 23 Jul 2025 02:04:47 GMT
+      Server:
+      - cloudflare
+      Vary:
+      - Accept-Encoding
+      x-oss-hash-crc64ecma:
+      - '9770365459716484400'
+      x-oss-object-type:
+      - Normal
+      x-oss-request-id:
+      - 696290585A61C63535863BDF
+      x-oss-server-time:
+      - '2'
+      x-oss-storage-class:
+      - Standard
+    status:
+      code: 200
+      message: OK
+version: 1

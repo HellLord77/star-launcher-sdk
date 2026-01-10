@@ -1,0 +1,65 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"MajSoul_KR","time":1768047941,"version":"1.0.0"},"sign":"8eb38a199fb19e6cb43e2cac839d6907"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-kr.yo-star.com
+      User-Agent:
+      - MajSoul_KR_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-kr.yo-star.com/api/launcher/operations/resource
+  response:
+    body:
+      string: "{\"code\":200,\"data\":{\"banner_loop\":true,\"news_list\":{\"code\":0,\"data\":{\"news\":[{\"rows\":[{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/64\",\"publishTime\":1748316210000,\"thumbnail\":\"\",\"title\":\"[\uC911\uC694]
+        Yostar \uACC4\uC815 \uB9AC\uB274\uC5BC \uC608\uACE0 \uBC0F \uACC4\uC815 \uC5F0\uB3D9
+        \uC548\uB0B4\",\"typeLabel\":\"\uC804\uCCB4\"},{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/87\",\"publishTime\":1767765032000,\"thumbnail\":\"\",\"title\":\"\uB300\uAD6D
+        \uBD80\uC815 \uD589\uC704 \uC870\uCE58 \uC548\uB0B4 (2026\uB144 1\uC6D4)\",\"typeLabel\":\"\uC804\uCCB4\"},{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/85\",\"publishTime\":1765767600000,\"thumbnail\":\"\",\"title\":\"2025\uB144
+        12\uC6D4 17\uC77C \uC810\uAC80 \uC548\uB0B4\",\"typeLabel\":\"\uC804\uCCB4\"}],\"typeLabel\":\"\uC804\uCCB4\"},{\"rows\":[{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/61\",\"publishTime\":1744804800000,\"thumbnail\":\"\",\"title\":\"\uCCAB
+        \uACB0\uC81C 2\uBC30 \uD61C\uD0DD \uCD08\uAE30\uD654 \uC548\uB0B4\",\"typeLabel\":\"\uC18C\uC2DD\"},{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/34\",\"publishTime\":1726128000000,\"thumbnail\":\"\",\"title\":\"\uC720\uB8CC
+        \uC544\uC774\uD15C \uC0C1\uD638 \uD638\uD658 \uAD00\uB828 \uC548\uB0B4\",\"typeLabel\":\"\uC18C\uC2DD\"},{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/29\",\"publishTime\":1721813533000,\"thumbnail\":\"\",\"title\":\"[\uC791\uD63C:
+        \uB9AC\uCE58 \uB9C8\uC791] Steam \uC815\uC2DD \uCD9C\uC2DC \uC548\uB0B4\",\"typeLabel\":\"\uC18C\uC2DD\"}],\"typeLabel\":\"\uC18C\uC2DD\"},{\"rows\":[{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/86\",\"publishTime\":1767061198541,\"thumbnail\":\"\",\"title\":\"MKC
+        2026 \uCC38\uAC00 \uC2E0\uCCAD \uC548\uB0B4\",\"typeLabel\":\"\uC774\uBCA4\uD2B8\"},{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/83\",\"publishTime\":1764907200000,\"thumbnail\":\"\",\"title\":\"2025\uB144
+        12\uC6D4 8\uC77C \uBB34\uC810\uAC80 \uC5C5\uB370\uC774\uD2B8 \uC548\uB0B4\",\"typeLabel\":\"\uC774\uBCA4\uD2B8\"},{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/77\",\"publishTime\":1759478400000,\"thumbnail\":\"\",\"title\":\"[\uC791\uD63C
+        \xD7 \uC740\uD63C] \uCF5C\uB77C\uBCF4 \uAE30\uB150 \uB9C8\uC791 \uB300\uC804:
+        \uD63C\uC744 \uAC74 \uD55C \uD310 \uC2B9\uBD80!\",\"typeLabel\":\"\uC774\uBCA4\uD2B8\"}],\"typeLabel\":\"\uC774\uBCA4\uD2B8\"},{\"rows\":[{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/85\",\"publishTime\":1765767600000,\"thumbnail\":\"\",\"title\":\"2025\uB144
+        12\uC6D4 17\uC77C \uC810\uAC80 \uC548\uB0B4\",\"typeLabel\":\"\uC810\uAC80\"},{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/82\",\"publishTime\":1763350222000,\"thumbnail\":\"\",\"title\":\"2025\uB144
+        11\uC6D4 19\uC77C \uC810\uAC80 \uC548\uB0B4\",\"typeLabel\":\"\uC810\uAC80\"},{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/79\",\"publishTime\":1760929200000,\"thumbnail\":\"\",\"title\":\"2025\uB144
+        10\uC6D4 22\uC77C \uC810\uAC80 \uC77C\uC815 \uC548\uB0B4\",\"typeLabel\":\"\uC810\uAC80\"}],\"typeLabel\":\"\uC810\uAC80\"},{\"rows\":[{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/64\",\"publishTime\":1748316210000,\"thumbnail\":\"\",\"title\":\"[\uC911\uC694]
+        Yostar \uACC4\uC815 \uB9AC\uB274\uC5BC \uC608\uACE0 \uBC0F \uACC4\uC815 \uC5F0\uB3D9
+        \uC548\uB0B4\",\"typeLabel\":\"\uAE30\uD0C0\"},{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/87\",\"publishTime\":1767765032000,\"thumbnail\":\"\",\"title\":\"\uB300\uAD6D
+        \uBD80\uC815 \uD589\uC704 \uC870\uCE58 \uC548\uB0B4 (2026\uB144 1\uC6D4)\",\"typeLabel\":\"\uAE30\uD0C0\"},{\"description\":\"\",\"link\":\"https://mahjongsoul.yo-star.com/kr/news/80\",\"publishTime\":1760954400000,\"thumbnail\":\"\",\"title\":\"\uAC1C\uC778\uC815\uBCF4
+        \uCC98\uB9AC\uBC29\uCE68 \uBC0F \uC11C\uBE44\uC2A4 \uC774\uC6A9 \uC57D\uAD00
+        \uBCC0\uACBD \uC0AC\uC804 \uC548\uB0B4\",\"typeLabel\":\"\uAE30\uD0C0\"}],\"typeLabel\":\"\uAE30\uD0C0\"}]},\"message\":\"ok\"},\"notice_list\":null,\"operations_banner_list\":[{\"banner_img\":\"https://launcher-pkg-mj-kr.yo-star.com/prod/MajSoul_KR/banner/e8367799efa01d073b4a416fbf3a40f0.png\",\"jump_url\":\"https://youtu.be/6bDK90jjHdA\",\"remark\":\"PV\",\"start_at\":0,\"end_at\":0},{\"banner_img\":\"https://launcher-pkg-mj-kr.yo-star.com/prod/MajSoul_KR/banner/e0894975ee4ff0658860ac4c718638fb.jpg\",\"jump_url\":\"https://cafe.naver.com/mahjongsoul/15732\",\"remark\":\"\u65B0\u89D2\u8272\",\"start_at\":0,\"end_at\":0},{\"banner_img\":\"https://launcher-pkg-mj-kr.yo-star.com/prod/MajSoul_KR/banner/b166ba76855925d5dab3d57c60de3ec4.jpg\",\"jump_url\":\"https://cafe.naver.com/mahjongsoul/15763\",\"remark\":\"\u65B0\u76AE\u80A4\",\"start_at\":0,\"end_at\":0},{\"banner_img\":\"https://launcher-pkg-mj-kr.yo-star.com/prod/MajSoul_KR/banner/54cff8731c84446310a936d1d4c86792.png\",\"jump_url\":\"https://cafe.naver.com/mahjongsoul/15889\",\"remark\":\"MKC2026\",\"start_at\":0,\"end_at\":0},{\"banner_img\":\"https://launcher-pkg-mj-kr.yo-star.com/prod/MajSoul_KR/banner/0c33ddd5568b8fe92077cc157b96e85e.png\",\"jump_url\":\"https://youtu.be/eL6IdVZk7Uo\",\"remark\":\"PV\",\"start_at\":0,\"end_at\":0},{\"banner_img\":\"https://launcher-pkg-mj-kr.yo-star.com/prod/MajSoul_KR/banner/03520b8aaaf572a598745d4812411969.png\",\"jump_url\":\"https://cafe.naver.com/mahjongsoul/14518\",\"remark\":\"\u8D26\u53F7\u7ED1\u5B9A\",\"start_at\":0,\"end_at\":0}],\"operations_resource_open\":true,\"time_interval\":5},\"msg\":\"OK\"}"
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:25:45 GMT
+      req-arrive-time:
+      - '1768047944257'
+      req-cost-time:
+      - '845'
+      resp-start-time:
+      - '1768047945102'
+      server:
+      - istio-envoy
+      set-cookie:
+      - acw_tc=4abc5f0c-8d6d-4b44-9891-9ba31b1e7b44f986b122f29f5da63a9ac1753d46f74e;path=/;HttpOnly;Max-Age=1800
+      tid:
+      - 3fa381b053cec1ab48fa90ab1b89bf46
+      transfer-encoding:
+      - chunked
+      x-envoy-upstream-service-time:
+      - '844'
+    status:
+      code: 200
+      message: OK
+version: 1

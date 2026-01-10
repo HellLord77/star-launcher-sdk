@@ -1,0 +1,76 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - launcher-pkg-en.yo-star.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: GET
+    uri: https://launcher-pkg-en.yo-star.com/pubplat/game_launcher/install_pkg/launcher/HBR_EN/latest.yml
+  response:
+    body:
+      string: "version: 1.4.1\nfiles:\n  - url: HeavenBurnsRed_Gamelauncher-1.4.1-setup.exe\n
+        \   sha512: EDoZ4SIskOsGn2gA9r14mkT/rycGyVvfSR0J5eD8lRKYWK/UmtRDpdMMedjiBzwcVbC9gKy6Hxp02xEnkW9tkQ==\n
+        \   size: 169048832\npath: HeavenBurnsRed_Gamelauncher-1.4.1-setup.exe\nsha512:
+        EDoZ4SIskOsGn2gA9r14mkT/rycGyVvfSR0J5eD8lRKYWK/UmtRDpdMMedjiBzwcVbC9gKy6Hxp02xEnkW9tkQ==\nreleaseDate:
+        '2025-05-16T06:24:01.232Z'\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - origin,range,hdntl,hdnts,CMCD-Request,CMCD-Object,CMCD-Status,CMCD-Session
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - Server,range,hdntl,hdnts,Akamai-Mon-Iucid-Ing,Akamai-Mon-Iucid-Del,Akamai-Request-BC
+      Access-Control-Max-Age:
+      - '86400'
+      Akamai-Mon-Iucid-Del:
+      - '1728112'
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '383'
+      Content-MD5:
+      - 6dqQQb18hfiKsnhkOuV9Hg==
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Sat, 10 Jan 2026 17:44:17 GMT
+      ETag:
+      - '"E9DA9041BD7C85F88AB278643AE57D1E"'
+      Expires:
+      - Sat, 10 Jan 2026 17:44:17 GMT
+      Last-Modified:
+      - Fri, 16 May 2025 08:12:52 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - AliyunOSS
+      x-oss-hash-crc64ecma:
+      - '7766652514582204367'
+      x-oss-object-type:
+      - Normal
+      x-oss-request-id:
+      - 69628FF1C961DA3531B2C770
+      x-oss-server-time:
+      - '3'
+      x-oss-storage-class:
+      - Standard
+    status:
+      code: 200
+      message: OK
+version: 1

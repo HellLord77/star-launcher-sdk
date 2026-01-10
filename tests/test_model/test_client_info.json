@@ -1,0 +1,11 @@
+{
+  "launcher_background_img": "https://launcher-pkg-ss-en.yo-star.com/prod/StellaSora_EN/launcher_background_img/117e4423f169c380b7910b3f3e33dd7f.png",
+  "launcher_background_img_crc64": "16998153004914323584",
+  "config_open": true,
+  "user_agreement": "https://stellasora.global/agreement",
+  "privacy_policy": "https://stellasora.global/privacy_policy",
+  "copyright_information": "\u00a9 Yostar",
+  "notice_pop_open": false,
+  "notice_content": "<p>Stella Sora will officially launch on October 19 at 19:00 (UTC-7)! </p><p>The server is currently being prepared.</p><p><br></p><p>Please uninstall the Closed Beta version and the launcher to prepare for the official release. Thank you for your support of Stella Sora!</p>",
+  "exit_launcher_open": true
+}

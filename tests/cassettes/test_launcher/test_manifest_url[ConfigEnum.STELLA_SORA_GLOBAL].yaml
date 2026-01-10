@@ -1,0 +1,86 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_EN","time":1768048041,"version":"1.0.0"},"sign":"88209d2e3d8e5116464d97eaf49f47db"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - StellaSora_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/launcher/game/config
+  response:
+    body:
+      string: '{"code":200,"data":{"game_lowest_version":"1.4.0","game_latest_version":"1.4.0","game_latest_file_path":"prod/ZIP_TEMP/StellaSora_EN_TEMP/StellaSora_EN-1.4.0-game.zip","game_start_exe_name":"StellaSora","game_file_size":"","game_file_size_type":"","crc64":"","size":0,"file_url":"","decompression_size":"15.1GB","config_id":0,"game_start_params":[]},"msg":"OK"}'
+    headers:
+      content-length:
+      - '361'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:27:21 GMT
+      req-arrive-time:
+      - '1768048041711'
+      req-cost-time:
+      - '1'
+      resp-start-time:
+      - '1768048041712'
+      server:
+      - istio-envoy
+      tid:
+      - 6e6c37fd2ea0d7406495ac309271e487
+      x-envoy-upstream-service-time:
+      - '0'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_EN","time":1768048041,"version":"1.0.0"},"sign":"88209d2e3d8e5116464d97eaf49f47db"}'
+      Connection:
+      - keep-alive
+      Host:
+      - api-launcher-en.yo-star.com
+      User-Agent:
+      - StellaSora_EN_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-en.yo-star.com/api/launcher/game/config/json?version=1.4.0&file_path=prod%2FZIP_TEMP%2FStellaSora_EN_TEMP%2FStellaSora_EN-1.4.0-game.zip
+  response:
+    body:
+      string: '{"code":200,"data":{"url":"https://launcher-pkg-ss-en.yo-star.com/zip_online_config_json/1.4.0TAcgHhN9.json"},"msg":"OK"}'
+    headers:
+      content-length:
+      - '121'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:27:22 GMT
+      req-arrive-time:
+      - '1768048042450'
+      req-cost-time:
+      - '1'
+      resp-start-time:
+      - '1768048042451'
+      server:
+      - istio-envoy
+      tid:
+      - 9f52b411b69beb7a0d611d47fedf6213
+      x-envoy-upstream-service-time:
+      - '1'
+    status:
+      code: 200
+      message: OK
+version: 1

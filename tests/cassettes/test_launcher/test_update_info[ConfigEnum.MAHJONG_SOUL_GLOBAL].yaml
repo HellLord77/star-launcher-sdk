@@ -1,0 +1,76 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Host:
+      - launcher-pkg-en.yo-star.com
+      User-Agent:
+      - python-httpx/0.28.1
+    method: GET
+    uri: https://launcher-pkg-en.yo-star.com/pubplat/game_launcher/install_pkg/launcher/MajSoul_EN/latest.yml
+  response:
+    body:
+      string: "version: 1.5.3\nfiles:\n  - url: MajSoul_EN_Gamelauncher-1.5.3-setup.exe\n
+        \   sha512: DeQs7MTvmMZg6j6bCchDLn21C82GW+CSaEYl5UL19ZZQ+RHkldY85D35TG/T/4FbYXY7WgBajoRblHSx+OSgDw==\n
+        \   size: 170453952\npath: MajSoul_EN_Gamelauncher-1.5.3-setup.exe\nsha512:
+        DeQs7MTvmMZg6j6bCchDLn21C82GW+CSaEYl5UL19ZZQ+RHkldY85D35TG/T/4FbYXY7WgBajoRblHSx+OSgDw==\nreleaseDate:
+        '2025-07-22T03:52:26.322Z'\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - origin,range,hdntl,hdnts,CMCD-Request,CMCD-Object,CMCD-Status,CMCD-Session
+      Access-Control-Allow-Methods:
+      - GET,POST,OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - Server,range,hdntl,hdnts,Akamai-Mon-Iucid-Ing,Akamai-Mon-Iucid-Del,Akamai-Request-BC
+      Access-Control-Max-Age:
+      - '86400'
+      Akamai-Mon-Iucid-Del:
+      - '1728112'
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '375'
+      Content-MD5:
+      - 73ygpxJxt/Og0iY8RunNug==
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Sat, 10 Jan 2026 17:44:19 GMT
+      ETag:
+      - '"EF7CA0A71271B7F3A0D2263C46E9CDBA"'
+      Expires:
+      - Sat, 10 Jan 2026 17:44:19 GMT
+      Last-Modified:
+      - Wed, 23 Jul 2025 02:04:58 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - AliyunOSS
+      x-oss-hash-crc64ecma:
+      - '1814930220845035370'
+      x-oss-object-type:
+      - Normal
+      x-oss-request-id:
+      - 69628FF1C961DA35312CC970
+      x-oss-server-time:
+      - '4'
+      x-oss-storage-class:
+      - Standard
+    status:
+      code: 200
+      message: OK
+version: 1

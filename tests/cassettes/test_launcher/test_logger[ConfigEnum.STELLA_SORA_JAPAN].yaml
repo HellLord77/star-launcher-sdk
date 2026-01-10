@@ -1,0 +1,46 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_JP","time":1768048063,"version":"1.0.0"},"sign":"3adbfad04a18be46442ebd861c39c540"}'
+      Connection:
+      - keep-alive
+      Cookie:
+      - acw_tc=2c68fe67-3f89-4937-9627-32cd0de9f3a4445f07ec13ecfd177d04cb208db3126d
+      Host:
+      - api-launcher-jp.yo-star.com
+      User-Agent:
+      - StellaSora_JP_GameLauncher/1.0.0
+    method: GET
+    uri: https://api-launcher-jp.yo-star.com/api/launcher/advanced/config
+  response:
+    body:
+      string: '{"code":200,"data":{"log_upload":true},"msg":"OK"}'
+    headers:
+      content-length:
+      - '50'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:27:43 GMT
+      req-arrive-time:
+      - '1768048063578'
+      req-cost-time:
+      - '2'
+      resp-start-time:
+      - '1768048063580'
+      server:
+      - istio-envoy
+      tid:
+      - 2fd29a39a36f8e9bb88511a927a8cf45
+      x-envoy-upstream-service-time:
+      - '2'
+    status:
+      code: 200
+      message: OK
+version: 1

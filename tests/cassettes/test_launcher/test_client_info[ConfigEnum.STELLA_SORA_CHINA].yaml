@@ -1,0 +1,46 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"StellaSora_CN","time":1768048125,"version":"1.0.0"},"sign":"bd5b39d571c9e3c342e3857693126eb5"}'
+      Connection:
+      - keep-alive
+      Host:
+      - launcher-api.yostar.net
+      User-Agent:
+      - StellaSora_CN_GameLauncher/1.0.0
+    method: GET
+    uri: https://launcher-api.yostar.net/api/launcher/base/config
+  response:
+    body:
+      string: "{\"code\":200,\"data\":{\"launcher_background_img\":\"https://game-launcher-ss-cn.yostar.net/launcher_background_img/fd8a09144c22af6c4ab400afe2cd21ed.jpg\",\"launcher_background_img_crc64\":\"6387215767227353377\",\"config_open\":true,\"user_agreement\":\"https://stellasora.yostar.cn/agreement\",\"privacy_policy\":\"https://stellasora.yostar.cn/privacy_policy\",\"copyright_information\":\"Copyright
+        \xA9 2024 Shanghai Yostar Co., Ltd. All Rights Reserved.\",\"notice_pop_open\":false,\"notice_content\":\"\\u003cp\\u003e\u300A\u661F\u5854\u65C5\u4EBA\u300B\u9884\u4E0B\u8F7D\u5DF2\u5F00\u542F\uFF0110\u670820\u65E5\u5373\u5C06\u6B63\u5F0F\u53D1\u5E03\u3002
+        \u6211\u4EEC\u671F\u5F85\u4E0E\u60A8\u76F8\u89C1\uFF0C\u9B54\u738B\u5927\u4EBA\uFF01\\u003c/p\\u003e\\u003cp\\u003e\\u003cbr\\u003e\\u003c/p\\u003e\\u003cp\\u003e\u3010\u6CE8\u610F\u4E8B\u9879\u3011\\u003c/p\\u003e\\u003cp\\u003e\u4E3A\u9632\u6B62\u9020\u6210\u60A8\u7684\u6E38\u620F\u635F\u574F\uFF0C\u5982\u60A8\u6B64\u524D\u53C2\u4E0E\u8FC7\u300A\u661F\u5854\u65C5\u4EBA\u300B\u6D4B\u8BD5\u9636\u6BB5\uFF0C\u8BF7\u60A8\u5378\u8F7D\u6D4B\u8BD5\u671F\u95F4\u4E0B\u8F7D\u7684\u5E94\u7528\u7A0B\u5E8F\uFF0C\u5E76\u5220\u9664\u6D4B\u8BD5\u671F\u95F4\u4E0B\u8F7D\u7684PC\u7248\u542F\u52A8\u5668\u3002\\u003c/p\\u003e\",\"exit_launcher_open\":false},\"msg\":\"OK\"}"
+    headers:
+      content-length:
+      - '954'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 12:28:47 GMT
+      req-arrive-time:
+      - '1768048127627'
+      req-cost-time:
+      - '3'
+      resp-start-time:
+      - '1768048127630'
+      server:
+      - istio-envoy
+      tid:
+      - 7d5337ad5e9f8cf92774ea60baf20645
+      x-envoy-upstream-service-time:
+      - '3'
+    status:
+      code: 200
+      message: OK
+version: 1

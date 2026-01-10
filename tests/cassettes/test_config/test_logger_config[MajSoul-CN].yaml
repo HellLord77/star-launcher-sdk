@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Authorization:
+      - '{"head":{"game_tag":"MajSoul_CN","time":1768062852,"version":"1.0.0"},"sign":"a22a16adc5922bcd494d4c2f1cf43393"}'
+      Connection:
+      - keep-alive
+      Host:
+      - launcher-api.yostar.net
+      User-Agent:
+      - MajSoul_CN_GameLauncher/1.0.0
+    method: GET
+    uri: https://launcher-api.yostar.net/api/open/api/config
+  response:
+    body:
+      string: '{"code":200,"data":{"AccessKeyId":"STS.NYM2X9EF7XktBqyq6iir6DE1k","AccessKeySecret":"9iNambDttzt9nhiA3KcZYhg7iDY3NzWUNzjGqUyscHmm","Expiration":"2026-01-10T16:49:19Z","SecurityToken":"CAISzQJ1q6Ft5B2yfSjIr5r4eeKNqJkW76mfQFfIlTY8Zf0aq4CaiTz2IHhMe3RsA+wZvv8xlGlR6v8blr93QoJDTkzJd/x76KNT9gyWfpLFvMW5tXGGXzN3Qjr9MQXy+eOPScebJYqvV5XAQlTAkTAJstmeXD6+XlujHISUgJp8FLo+VRW5ajw0b7U/ZHEVyqkgOGDWKOymPzPzn2PUFzAIgAdnjn5l4qnNqa/1qDim1QerlrdI99muesb+Npg9ZK0SCYnlgLZEEYPayzNV5hRw86N7sbdJ4z+vvKvGWwEOvkncb7WEqYM/dVYlP/EgeKpNsf73lfBi/+fVh0pXDZWiyy8/uU39M2PAqKOscIvBXl054ALiP4sUqs+VwJ/snQkSc1wR+v8mFCHZ0oaZ5OX1m9gjy1ZuEaEDr/ZqssJuqsJJOuKepA6AUO57qQbnK90agAE1ab5SSJxiujgwXQyyd7ns4sVQtUzgni78aT5CpzKZck6/0MfKyAwMkTrMW09Kp59+21ClOdKbJCK2peONQNXNNz9au+qPsC6IXrPC9vTPIrS643q+9Vmm7pNXAC/j/l8Gak/7cvltvW9a1WsaRKP1rtA7NDxY/FOqzmrShsq1YSAA"},"msg":"OK"}'
+    headers:
+      content-length:
+      - '826'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Sat, 10 Jan 2026 16:34:19 GMT
+      req-arrive-time:
+      - '1768062859609'
+      req-cost-time:
+      - '55'
+      resp-start-time:
+      - '1768062859664'
+      server:
+      - istio-envoy
+      tid:
+      - ed39647bfed4a25e35b1c8a4c7e54754
+      x-envoy-upstream-service-time:
+      - '55'
+    status:
+      code: 200
+      message: OK
+version: 1
