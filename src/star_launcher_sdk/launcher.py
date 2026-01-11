@@ -1,9 +1,11 @@
 from collections.abc import Iterator
+from http import HTTPMethod
 from typing import override
 
 from httpx import URL
 from httpx import AsyncClient
 from httpx import Client
+from httpx import Request
 from httpx import Response
 from pydantic import BaseModel
 from pydantic_extra_types.semantic_version import SemanticVersion
@@ -51,30 +53,11 @@ class Launcher:
             client = Client()
         self.client = client
 
-    def get_update_info(self) -> UpdateInfo | None:
-        if self.update_url is None:
-            return None
-
-        url = self.update_url.join("latest.yml")
-
-        response = self.client.get(url)
-        response.raise_for_status()
-
-        return parse_yaml_raw_as(UpdateInfo, response.content)
-
     def _get_url(self, path: Path | None = None) -> URL:
         base_url = URL(scheme="https", host=self.config.region.host)
         if path is not None:
             base_url = base_url.join(path)
         return base_url
-
-    def get_hello_world(self) -> HelloWorld:
-        url = self._get_url()
-
-        response = self.client.get(url)
-        response.raise_for_status()
-
-        return HelloWorld.model_validate_json(response.content)
 
     def _get_headers(self) -> Headers:
         data = ""
@@ -86,9 +69,7 @@ class Launcher:
         user_agent = f"{game_id}_GameLauncher/{version}"
         return Headers(authorization=authorization, user_agent=user_agent)
 
-    def _get_data[Data: BaseModel](
-        self, path: Path, params: ManifestUrlParams | None = None, *, data: type[Data]
-    ) -> Data | None:
+    def _get_request(self, path: Path, params: ManifestUrlParams | None = None) -> Request:
         url = self._get_url(path)
         headers = self._get_headers()
 
@@ -96,8 +77,37 @@ class Launcher:
             params = params.model_dump()
         headers = headers.model_dump()
 
-        response = self.client.get(url, params=params, headers=headers)
+        return Request(HTTPMethod.GET, url, params=params, headers=headers)
+
+    def _get_response(self, request: Request) -> Response:
+        response = self.client.send(request)
         response.raise_for_status()
+        return response
+
+    def _get_simple_response(self, url: str | URL) -> Response:
+        request = Request(HTTPMethod.GET, url)
+        return self._get_response(request)
+
+    def get_update_info(self) -> UpdateInfo | None:
+        if self.update_url is None:
+            return None
+
+        url = self.update_url.join("latest.yml")
+        response = self._get_simple_response(url)
+
+        return parse_yaml_raw_as(UpdateInfo, response.content)
+
+    def get_hello_world(self) -> HelloWorld:
+        url = self._get_url()
+        response = self._get_simple_response(url)
+
+        return HelloWorld.model_validate_json(response.content)
+
+    def _get_data[Data: BaseModel](
+        self, path: Path, params: ManifestUrlParams | None = None, *, data: type[Data]
+    ) -> Data | None:
+        request = self._get_request(path, params)
+        response = self._get_response(request)
 
         return parse_json_response_as(data, response)
 
@@ -125,9 +135,7 @@ class Launcher:
 
     def get_manifest(self, manifest_url: ManifestUrl) -> Manifest:
         url = str(manifest_url.url)
-
-        response = self.client.get(url)
-        response.raise_for_status()
+        response = self._get_simple_response(url)
 
         return Manifest.model_validate_json(response.content)
 
@@ -161,42 +169,34 @@ class AsyncLauncher(Launcher):
         if self.update_url is None:
             return None
 
-        url = f"{self.update_url}latest.yml"
-
-        response = await self.client.get(url)
-        response.raise_for_status()
+        url = self.update_url.join("latest.yml")
+        response = await self._get_simple_response(url)
 
         return parse_yaml_raw_as(UpdateInfo, response.content)
 
     async def get_hello_world(self) -> HelloWorld:
         url = self._get_url()
-
-        response = await self.client.get(url)
-        response.raise_for_status()
+        response = await self._get_simple_response(url)
 
         return HelloWorld.model_validate_json(response.content)
+
+    async def _get_response(self, request: Request) -> Response:
+        response = await self.client.send(request)
+        response.raise_for_status()
+        return response
 
     @override
     async def _get_data[Data: BaseModel](
         self, path: Path, params: ManifestUrlParams | None = None, *, data: type[Data]
     ) -> Data | None:
-        url = self._get_url(path)
-        headers = self._get_headers()
-
-        if params is not None:
-            params = params.model_dump()
-        headers = headers.model_dump()
-
-        response = await self.client.get(url, params=params, headers=headers)
-        response.raise_for_status()
+        request = self._get_request(path, params)
+        response = await self._get_response(request)
 
         return parse_json_response_as(data, response)
 
     @override
     async def get_manifest(self, manifest_url: ManifestUrl) -> Manifest:
         url = str(manifest_url.url)
-
-        response = await self.client.get(url)
-        response.raise_for_status()
+        response = await self._get_simple_response(url)
 
         return Manifest.model_validate_json(response.content)
