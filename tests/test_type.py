@@ -57,6 +57,22 @@ def test_relative_zip_path():
         relative_zip_path_adapter.validate_python(RelativeZipPath("relative/path/file.txt"))
 
 
+def test_domain_url():
+    from star_launcher_sdk.types import DomainUrl
+
+    domain_url_adapter = TypeAdapter(DomainUrl)
+
+    domain_url_adapter.validate_strings("https://example.com/")
+    # noinspection HttpUrlsUsage
+    domain_url_adapter.validate_python(DomainUrl("http://another-example.org/"))
+
+    with pytest.raises(ValidationError):
+        domain_url_adapter.validate_strings("https://example.com/path")
+    with pytest.raises(ValidationError):
+        # noinspection HttpUrlsUsage
+        domain_url_adapter.validate_python(DomainUrl("http://another-example.org/path"))
+
+
 def test_image_url():
     from star_launcher_sdk.types import ImageUrl
 

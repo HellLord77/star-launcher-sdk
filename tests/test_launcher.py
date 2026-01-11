@@ -100,5 +100,14 @@ def test_get_manifest_file_urls(launcher):
     manifest = launcher.get_manifest(manifest_url)
 
     manifest_file_urls = tuple(launcher.get_manifest_file_urls(domain, manifest))
-    assert all(isinstance(url, URL) for url in manifest_file_urls)
+    backup_manifest_file_urls = tuple(launcher.get_manifest_file_urls(domain, manifest, backup=True))
+
     assert len(manifest_file_urls) == len(manifest.file)
+    assert len(backup_manifest_file_urls) == len(manifest.file)
+
+    assert all(isinstance(url, URL) for url in manifest_file_urls)
+    assert all(isinstance(url, URL) for url in backup_manifest_file_urls)
+
+    source = str(manifest.source)[1:]
+    assert manifest_file_urls[0] == f"{domain.primary_cdn}{source}{manifest.file[0].path}"
+    assert backup_manifest_file_urls[-1] == f"{domain.back_up_cdn}{source}{manifest.file[-1].path}"

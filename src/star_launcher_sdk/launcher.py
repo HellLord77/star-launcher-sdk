@@ -151,8 +151,7 @@ class Launcher:
         url = URL(cdn, path=path)
 
         for file in manifest.file:
-            path = str(file.path)
-            yield url.join(path)
+            yield URL(f"{url}{file.path}")
 
 
 class AsyncLauncher(Launcher):
