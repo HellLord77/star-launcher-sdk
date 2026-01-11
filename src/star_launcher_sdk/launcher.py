@@ -147,11 +147,11 @@ class Launcher:
     @staticmethod
     def get_manifest_file_urls(domain: Domain, manifest: Manifest, *, backup: bool = False) -> Iterator[URL]:
         cdn = str(domain.back_up_cdn if backup else domain.primary_cdn)
-        path = str(manifest.source)
-        url = URL(cdn, path=path)
+        url = URL(cdn)
 
         for file in manifest.file:
-            yield URL(f"{url}{file.path}")
+            path = f"{manifest.source}{file.path}"
+            yield url.join(path)
 
 
 class AsyncLauncher(Launcher):

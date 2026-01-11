@@ -23,7 +23,7 @@ RelativeZipPath = Annotated[
     PurePosixPath, Predicate(lambda path: path.suffix == ".zip"), Predicate(Not(PurePosixPath.is_absolute))
 ]
 
-DomainUrl = Annotated[HttpUrl, Predicate(lambda url: url.path == "/")]
+RootUrl = Annotated[HttpUrl, Predicate(lambda url: url.path == "/")]
 ImageUrl = Annotated[HttpUrl, Predicate(lambda url: url.path.endswith((".jpg", ".jpeg", ".png")))]
 JsonUrl = Annotated[HttpUrl, Predicate(lambda url: url.path.endswith(".json"))]
 
