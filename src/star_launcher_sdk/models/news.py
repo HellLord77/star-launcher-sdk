@@ -1,7 +1,6 @@
-from pydantic import BaseModel
-
+from .base import Base
 from .news_column import NewsColumn
 
 
-class News(BaseModel):
+class News(Base):
     news: list[NewsColumn]

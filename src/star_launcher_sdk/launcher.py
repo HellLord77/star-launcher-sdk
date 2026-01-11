@@ -7,7 +7,6 @@ from httpx import AsyncClient
 from httpx import Client
 from httpx import Request
 from httpx import Response
-from pydantic import BaseModel
 from pydantic_extra_types.semantic_version import SemanticVersion
 from pydantic_yaml import parse_yaml_raw_as
 
@@ -25,6 +24,7 @@ from .models import LoggerConfig
 from .models import Manifest
 from .models import ManifestUrl
 from .models import UpdateInfo
+from .models.base import Base
 from .models.headers import Headers
 from .models.manifest_url_params import ManifestUrlParams
 from .models.response_body import ResponseBody
@@ -32,7 +32,7 @@ from .types import RelativeZipPath
 from .utils import get_auth_header
 
 
-def parse_json_response_as[Data: BaseModel](model_type: type[Data], response: Response) -> Data | None:
+def parse_json_response_as[T: Base](model_type: type[T], response: Response) -> T | None:
     # noinspection PyTypeHints
     data = ResponseBody[model_type].model_validate_json(response.content).data
     if data == {}:
@@ -103,9 +103,7 @@ class Launcher:
 
         return HelloWorld.model_validate_json(response.content)
 
-    def _get_data[Data: BaseModel](
-        self, path: Path, params: ManifestUrlParams | None = None, *, data: type[Data]
-    ) -> Data | None:
+    def _get_data[T: Base](self, path: Path, params: ManifestUrlParams | None = None, *, data: type[T]) -> T | None:
         request = self._get_request(path, params)
         response = self._get_response(request)
 
@@ -147,7 +145,7 @@ class Launcher:
         return self.update_url.join(path)
 
     @staticmethod
-    def iter_manifest_file_urls(domain: Domain, manifest: Manifest, *, backup: bool = False) -> Iterator[URL]:
+    def get_manifest_file_urls(domain: Domain, manifest: Manifest, *, backup: bool = False) -> Iterator[URL]:
         cdn = str(domain.back_up_cdn if backup else domain.primary_cdn)
         path = str(manifest.source)
         url = URL(cdn, path=path)
@@ -186,9 +184,9 @@ class AsyncLauncher(Launcher):
         return response
 
     @override
-    async def _get_data[Data: BaseModel](
-        self, path: Path, params: ManifestUrlParams | None = None, *, data: type[Data]
-    ) -> Data | None:
+    async def _get_data[T: Base](
+        self, path: Path, params: ManifestUrlParams | None = None, *, data: type[T]
+    ) -> T | None:
         request = self._get_request(path, params)
         response = await self._get_response(request)
 

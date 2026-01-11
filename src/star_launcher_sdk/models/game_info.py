@@ -1,14 +1,15 @@
 from typing import Literal
 
-from pydantic import BaseModel
 from pydantic import ByteSize
 from pydantic_extra_types.semantic_version import SemanticVersion
 
 from star_launcher_sdk.types import EmptyList
 from star_launcher_sdk.types import RelativeZipPath
 
+from .base import Base
 
-class GameInfo(BaseModel):
+
+class GameInfo(Base):
     game_lowest_version: SemanticVersion
     game_latest_version: SemanticVersion
     game_latest_file_path: RelativeZipPath

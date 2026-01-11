@@ -1,15 +1,15 @@
 from enum import Enum
 from typing import Self
 
-from pydantic import BaseModel
 from pydantic_extra_types.semantic_version import SemanticVersion
 
 from .enums import Game
 from .enums import Region
 from .enums.update_url import UpdateUrl
+from .models.base import Base
 
 
-class ConfigModel(BaseModel):
+class ConfigModel(Base):
     game: Game
     region: Region = Region.GLOBAL
     version: SemanticVersion = SemanticVersion(1, 0, 0)

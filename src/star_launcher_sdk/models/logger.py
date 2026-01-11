@@ -1,7 +1,7 @@
 from typing import Literal
 
-from pydantic import BaseModel
+from .base import Base
 
 
-class Logger(BaseModel):
+class Logger(Base):
     log_upload: Literal[True]

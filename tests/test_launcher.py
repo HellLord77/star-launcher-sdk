@@ -93,12 +93,12 @@ def test_update_file_url(launcher):
     assert isinstance(update_file_url, URL)
 
 
-def test_iter_manifest_file_urls(launcher):
+def test_get_manifest_file_urls(launcher):
     domain = launcher.get_domain()
     game_info = launcher.get_game_info()
     manifest_url = launcher.get_manifest_url(game_info.game_latest_version, game_info.game_latest_file_path)
     manifest = launcher.get_manifest(manifest_url)
 
-    manifest_file_urls = tuple(launcher.iter_manifest_file_urls(domain, manifest))
+    manifest_file_urls = tuple(launcher.get_manifest_file_urls(domain, manifest))
     assert all(isinstance(url, URL) for url in manifest_file_urls)
     assert len(manifest_file_urls) == len(manifest.file)

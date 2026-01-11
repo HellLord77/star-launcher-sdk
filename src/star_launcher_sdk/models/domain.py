@@ -1,7 +1,8 @@
-from pydantic import BaseModel
 from pydantic import HttpUrl
 
+from .base import Base
 
-class Domain(BaseModel):
+
+class Domain(Base):
     back_up_cdn: HttpUrl
     primary_cdn: HttpUrl

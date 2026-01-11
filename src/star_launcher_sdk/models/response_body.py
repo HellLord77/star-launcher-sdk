@@ -1,11 +1,11 @@
 from typing import Literal
 
-from pydantic import BaseModel
-
 from star_launcher_sdk.types import EmptyDict
 
+from .base import Base
 
-class ResponseBody[Data: BaseModel](BaseModel):
+
+class ResponseBody[T: Base](Base):
     code: Literal[200]
-    data: Data | EmptyDict | None
+    data: T | EmptyDict | None
     msg: Literal["OK"]

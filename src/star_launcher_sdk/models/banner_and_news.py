@@ -1,12 +1,11 @@
 from typing import Literal
 
-from pydantic import BaseModel
-
+from .base import Base
 from .news_list import NewsList
 from .operations_banner import OperationsBanner
 
 
-class BannerAndNews(BaseModel):
+class BannerAndNews(Base):
     banner_loop: bool
     news_list: NewsList | None
     notice_list: None

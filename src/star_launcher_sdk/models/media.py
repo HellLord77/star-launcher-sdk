@@ -1,12 +1,11 @@
 from typing import Literal
 
-from pydantic import BaseModel
-
 from .aihelp_customer_complaint import AIHelpCustomerComplaint
+from .base import Base
 from .social_media_resource import SocialMediaResource
 
 
-class Media(BaseModel):
+class Media(Base):
     social_media_resource_open: Literal[True]
     social_media_resource_list: list[SocialMediaResource]
     contact_customer_complaint: Literal[False]

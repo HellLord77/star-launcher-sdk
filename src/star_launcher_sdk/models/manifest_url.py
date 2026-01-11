@@ -1,7 +1,7 @@
-from pydantic import BaseModel
-
 from star_launcher_sdk.types import JsonUrl
 
+from .base import Base
 
-class ManifestUrl(BaseModel):
+
+class ManifestUrl(Base):
     url: JsonUrl

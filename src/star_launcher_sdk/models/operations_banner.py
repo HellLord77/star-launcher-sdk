@@ -1,13 +1,14 @@
 from datetime import datetime
 from typing import Literal
 
-from pydantic import BaseModel
 from pydantic import HttpUrl
 
 from star_launcher_sdk.types import ImageUrl
 
+from .base import Base
 
-class OperationsBanner(BaseModel):
+
+class OperationsBanner(Base):
     banner_img: ImageUrl
     jump_url: Literal[""] | HttpUrl
     remark: str

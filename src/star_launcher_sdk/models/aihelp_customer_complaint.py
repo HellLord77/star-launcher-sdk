@@ -1,9 +1,9 @@
 from typing import Literal
 
-from pydantic import BaseModel
+from .base import Base
 
 
-class AIHelpCustomerComplaint(BaseModel):
+class AIHelpCustomerComplaint(Base):
     aihelp_app_id: Literal[""]
     aihelp_domain: Literal[""]
     aihelp_app_key: Literal[""]
