@@ -5,4 +5,3 @@ from .base import Base
 
 class Headers(Base, populate_by_name=True, alias_generator=to_train, serialize_by_alias=True):
     authorization: str
-    user_agent: str

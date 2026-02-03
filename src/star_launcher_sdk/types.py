@@ -1,7 +1,6 @@
 from pathlib import PurePosixPath
 from typing import Annotated  # noqa: TID251
 
-# noinspection PyProtectedMember
 from annotated_types import Not
 from annotated_types import Predicate
 from pydantic import Base64Bytes
@@ -12,16 +11,11 @@ from pydantic import NonNegativeInt
 EmptyDict = Annotated[dict, Field(max_length=0)]
 EmptyList = Annotated[list, Field(max_length=0)]
 
-# noinspection PyTypeChecker
 AbsolutePath = Annotated[PurePosixPath, Predicate(PurePosixPath.is_absolute)]
-# noinspection PyTypeChecker
-RelativeExePath = Annotated[
-    PurePosixPath, Predicate(lambda path: path.suffix == ".exe"), Predicate(Not(PurePosixPath.is_absolute))
-]
-# noinspection PyTypeChecker
-RelativeZipPath = Annotated[
-    PurePosixPath, Predicate(lambda path: path.suffix == ".zip"), Predicate(Not(PurePosixPath.is_absolute))
-]
+RelativePath = Annotated[PurePosixPath, Predicate(Not(PurePosixPath.is_absolute))]
+
+RelativeExePath = Annotated[RelativePath, Predicate(lambda path: path.suffix == ".exe")]
+RelativeZipPath = Annotated[RelativePath, Predicate(lambda path: path.suffix == ".zip")]
 
 RootUrl = Annotated[HttpUrl, Predicate(lambda url: url.path == "/")]
 ImageUrl = Annotated[HttpUrl, Predicate(lambda url: url.path.endswith((".jpg", ".jpeg", ".png")))]

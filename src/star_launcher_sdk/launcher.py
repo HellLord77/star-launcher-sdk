@@ -33,7 +33,6 @@ from .utils import get_auth_header
 
 
 def parse_json_response_as[T: Base](model_type: type[T], response: Response) -> T | None:
-    # noinspection PyTypeHints
     data = ResponseBody[model_type].model_validate_json(response.content).data
     if data == {}:
         data = None
@@ -54,10 +53,10 @@ class Launcher:
         self.client = client
 
     def _get_url(self, path: Path | None = None) -> URL:
-        base_url = URL(scheme="https", host=self.config.region.host)
+        url = URL(scheme="https", host=self.config.region.host)
         if path is not None:
-            base_url = base_url.join(path)
-        return base_url
+            url = url.join(path)
+        return url
 
     def _get_headers(self) -> Headers:
         data = ""
@@ -66,10 +65,9 @@ class Launcher:
         salt = self.config.region.salt
 
         authorization = get_auth_header(data, game_id, version, salt)
-        user_agent = f"{game_id}_GameLauncher/{version}"
-        return Headers(authorization=authorization, user_agent=user_agent)
+        return Headers(authorization=authorization)
 
-    def _get_request(self, path: Path, params: ManifestUrlParams | None = None) -> Request:
+    def _get_request(self, path: Path, params: ManifestUrlParams | None) -> Request:
         url = self._get_url(path)
         headers = self._get_headers()
 
@@ -161,7 +159,7 @@ class AsyncLauncher(Launcher):
             client = AsyncClient()
 
         super().__init__(config, client=client)
-
+    @override
     async def get_update_info(self) -> UpdateInfo | None:
         if self.update_url is None:
             return None
@@ -170,13 +168,14 @@ class AsyncLauncher(Launcher):
         response = await self._get_simple_response(url)
 
         return parse_yaml_raw_as(UpdateInfo, response.content)
-
+    @override
     async def get_hello_world(self) -> HelloWorld:
         url = self._get_url()
         response = await self._get_simple_response(url)
 
         return HelloWorld.model_validate_json(response.content)
 
+    @override
     async def _get_response(self, request: Request) -> Response:
         response = await self.client.send(request)
         response.raise_for_status()

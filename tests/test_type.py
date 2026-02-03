@@ -63,13 +63,11 @@ def test_root_url():
     root_url_adapter = TypeAdapter(RootUrl)
 
     root_url_adapter.validate_strings("https://example.com/")
-    # noinspection HttpUrlsUsage
     root_url_adapter.validate_python(RootUrl("http://another-example.org/"))
 
     with pytest.raises(ValidationError):
         root_url_adapter.validate_strings("https://example.com/path")
     with pytest.raises(ValidationError):
-        # noinspection HttpUrlsUsage
         root_url_adapter.validate_python(RootUrl("http://another-example.org/path"))
 
 

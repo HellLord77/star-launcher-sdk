@@ -10,13 +10,11 @@ pytestmark = [pytest.mark.vcr]
 
 @pytest.fixture(scope="module", params=Game)
 def game(request: pytest.FixtureRequest):
-    # noinspection PyUnresolvedReferences
     return request.param
 
 
 @pytest.fixture(scope="module", params=Region)
 def region(request: pytest.FixtureRequest):
-    # noinspection PyUnresolvedReferences
     return request.param
 
 
